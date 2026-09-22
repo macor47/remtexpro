@@ -61,7 +61,7 @@ tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary
 
 <!-- UNIFIED STATIC HEADER -->
 <header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-xl border-b border-surface-variant shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
-  <div class="h-20 max-w-[1440px] mx-auto px-margin lg:px-margin-desktop flex items-center justify-between gap-space-md overflow-x-auto no-scrollbar">
+<div class="h-20 max-w-[1440px] mx-auto px-margin lg:px-margin-desktop flex items-center justify-between gap-space-md">
     
     <!-- Logo -->
     <div class="flex items-center gap-space-md shrink-0">
@@ -77,25 +77,25 @@ tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary
     </div>
 
     <!-- Nav (Static, nowrap) -->
-    <nav class="flex items-center gap-space-md font-body-sm text-body-sm shrink-0">
-      <a id="nav-pocetna" class="nav-link nav-active text-on-surface-variant hover:text-secondary transition-colors py-2 whitespace-nowrap cursor-pointer" onclick="switchView('pocetna', 'nav-pocetna')">Početna</a>
+<nav class="hidden lg:flex items-center gap-space-md font-body-sm text-body-sm shrink-0">
+  <a id="nav-pocetna" class="nav-link nav-active text-on-surface-variant hover:text-secondary transition-colors py-2 whitespace-nowrap cursor-pointer" onclick="switchView('pocetna', 'nav-pocetna')">Početna</a>
       <a id="nav-katalog" class="nav-link text-on-surface-variant hover:text-secondary transition-colors py-2 whitespace-nowrap cursor-pointer" onclick="switchView('katalog', 'nav-katalog')">Katalog Proizvoda</a>
       <a id="nav-oprema" class="nav-link text-on-surface-variant hover:text-secondary transition-colors py-2 whitespace-nowrap cursor-pointer" onclick="switchView('pocetna', 'nav-oprema'); setTimeout(()=>document.getElementById('oprema').scrollIntoView(), 100)">Opremanje Hotela & Apartmana</a>
       <a id="nav-kontakt" class="nav-link text-on-surface-variant hover:text-secondary transition-colors py-2 whitespace-nowrap cursor-pointer" onclick="switchView('kontakt', 'nav-kontakt')">Upit & Kontakt</a>
     </nav>
 
     <!-- CTAs -->
-    <div class="flex items-center gap-space-sm shrink-0">
-      <a class="inline-flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-headline-sm text-[0.8125rem] border border-outline-variant/40 transition-colors whitespace-nowrap cursor-pointer" onclick="switchView('katalog', 'nav-katalog')">
-        <span class="font-label-specs text-label-specs uppercase text-on-surface-variant">Katalog 2025</span>
-      </a>
-      <a class="inline-flex items-center px-space-md py-2.5 rounded-lg bg-primary-container hover:bg-on-tertiary-fixed text-on-primary font-headline-sm text-body-sm transition-all shadow-[0_2px_10px_rgba(19,27,46,0.15)] whitespace-nowrap cursor-pointer" onclick="switchView('kontakt', 'nav-kontakt')">
-        Zatražite Ponudu (RFQ)
-      </a>
-      <button class="lg:hidden p-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors focus:outline-none shrink-0" onclick="document.getElementById('mobile-nav-drawer').classList.toggle('hidden');">
-        <span class="material-symbols-outlined text-[24px]">menu</span>
-      </button>
-    </div>
+<div class="flex items-center gap-space-sm shrink-0">
+  <a class="hidden sm:inline-flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-headline-sm text-[0.8125rem] border border-outline-variant/40 transition-colors whitespace-nowrap cursor-pointer" onclick="switchView('katalog', 'nav-katalog')">
+    <span class="font-label-specs text-label-specs uppercase text-on-surface-variant">Katalog 2025</span>
+  </a>
+  <a class="hidden md:inline-flex items-center px-space-md py-2.5 rounded-lg bg-primary-container hover:bg-on-tertiary-fixed text-on-primary font-headline-sm text-body-sm transition-all shadow-[0_2px_10px_rgba(19,27,46,0.15)] whitespace-nowrap cursor-pointer" onclick="switchView('kontakt', 'nav-kontakt')">
+    Zatražite Ponudu (RFQ)
+  </a>
+  <button class="lg:hidden p-2.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors focus:outline-none shrink-0" onclick="document.getElementById('mobile-nav-drawer').classList.toggle('hidden');">
+    <span class="material-symbols-outlined text-[26px]">menu</span>
+  </button>
+</div>
   </div>
 
   <!-- Mobile Drawer -->
