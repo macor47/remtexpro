@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="hr" style="scroll-behavior: smooth;">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>RemTex Pro d.o.o. | B2B Tekstilno Opremanje Hotela i Apartmana</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<style>
+  @layer base { 
+    html, body { margin: 0; padding: 0; } 
+    main > :first-child { margin-top: 0 !important; } 
+    main > :last-child { margin-bottom: 0 !important; } 
+  } 
+  ::-webkit-scrollbar { display: none; }
+  
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  /* Custom utility for active nav states */
+  .nav-active { color: #000000 !important; font-weight: 600 !important; }
+
+  /* Fade-in animation */
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, visibility;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Horizontal Infinite Loop */
+  .mask-horizontal {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  }
+  @keyframes scroll-horizontal {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 0.75rem)); } /* Adjusting for half the flex gap */
+  }
+  .animate-marquee-x {
+    display: flex;
+    width: max-content;
+    animation: scroll-horizontal 35s linear infinite;
+  }
+  .animate-marquee-x:hover {
+    animation-play-state: paused;
+  }
+</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
+tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed-dim": "#e0c298", "surface": "#fbf9f5", "surface-container-lowest": "#ffffff", "on-secondary-container": "#78603e", "on-primary-fixed-variant": "#3f465c", "on-primary-container": "#7c839b", "outline": "#76777d", "tertiary-fixed": "#d5e3fd", "surface-container-low": "#f5f3ef", "inverse-surface": "#30312e", "on-tertiary": "#ffffff", "primary-fixed": "#dae2fd", "secondary-container": "#fedeb2", "on-error-container": "#93000a", "on-error": "#ffffff", "on-secondary": "#ffffff", "on-background": "#1b1c1a", "on-primary": "#ffffff", "surface-variant": "#e4e2de", "surface-tint": "#565e74", "primary": "#000000", "secondary": "#725b38", "on-tertiary-fixed": "#0d1c2f", "surface-bright": "#fbf9f5", "on-secondary-fixed-variant": "#584323", "tertiary-container": "#0d1c2f", "primary-fixed-dim": "#bec6e0", "error-container": "#ffdad6", "primary-container": "#131b2e", "outline-variant": "#c6c6cd", "on-surface": "#1b1c1a", "background": "#fbf9f5", "surface-container": "#efeeea", "on-tertiary-fixed-variant": "#3a485c", "surface-dim": "#dbdad6", "secondary-fixed": "#fedeb2", "error": "#ba1a1a", "on-tertiary-container": "#76859b", "on-surface-variant": "#45464d", "on-primary-fixed": "#131b2e", "inverse-on-surface": "#f2f0ec", "tertiary": "#000000", "surface-container-high": "#eae8e4", "on-secondary-fixed": "#281800", "tertiary-fixed-dim": "#b9c7e0", "surface-container-highest": "#e4e2de", "inverse-primary": "#bec6e0" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-lg": "2rem", "gutter": "1.5rem", "gutter-desktop": "2.5rem", "space-xs": "0.375rem", "space-md": "1.25rem", "margin-desktop": "5rem", "space-sm": "0.75rem", "margin-tablet": "2.5rem", "margin": "1.25rem", "space-xl": "3.5rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Manrope"], "headline-md": ["Plus Jakarta Sans"], "display-xl-mobile": ["Plus Jakarta Sans"], "body-sm": ["Manrope"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Manrope"], "label-caps": ["Plus Jakarta Sans"], "display-xl": ["Plus Jakarta Sans"], "label-specs": ["JetBrains Mono"] }, "fontSize": { "headline-lg": ["2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["1.125rem", { "lineHeight": "1.875rem", "letterSpacing": "0", "fontWeight": "400" }], "headline-md": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "500" }], "display-xl-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-sm": ["0.8125rem", { "lineHeight": "1.375rem", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["0.9375rem", { "lineHeight": "1.625rem", "letterSpacing": "0", "fontWeight": "400" }], "label-caps": ["0.6875rem", { "lineHeight": "1rem", "letterSpacing": "0.12em", "fontWeight": "700" }], "display-xl": ["3.75rem", { "lineHeight": "4.25rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "label-specs": ["0.75rem", { "lineHeight": "1.125rem", "letterSpacing": "0.05em", "fontWeight": "500" }] } } } };
+</script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased relative overflow-x-hidden">
+
+<!-- UNIFIED STATIC HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-xl border-b border-surface-variant shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+  <div class="h-20 max-w-[1440px] mx-auto px-margin lg:px-margin-desktop flex items-center justify-between gap-space-md overflow-x-auto no-scrollbar">
+    
+    <!-- Logo -->
+    <div class="flex items-center gap-space-md shrink-0">
+      <a class="flex items-center gap-space-xs focus:outline-none cursor-pointer" onclick="switchView('pocetna', 'nav-pocetna')">
+        <div class="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0 shadow-sm">
+          <img src="https://lh3.googleusercontent.com/aida/AEtjO1Wqb2HCik7kxYeBhkBIIH3pNRSwlculZ_y4OHoLHVdqRhW7GvTU6upIptBBqBl0U1uAV4HafAR30bLyR4SJMXD8uP82xlm3fFLw3-xZeDb2gk1ohjPyiv4z7dfj76HsUo-LLWxdEhNgehsIbDb3PSIISoBn_4xYP2R9DQKpf8YWlHyNqOxDfmplwGFvHlTBVrd3hQjTVhMOFx8PqDi6hsC_6qceKYli5HqJK8Nu3IAzqdEW5esC3EnVUyhX" alt="RemTex Pro Emblem" class="w-full h-full object-cover">
+        </div>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight uppercase whitespace-nowrap">RemTex Pro</span>
+          <span class="font-label-caps text-[0.625rem] text-secondary font-semibold uppercase tracking-widest whitespace-nowrap">Hospitality Textiles</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Nav (Static, nowrap) -->
+    <nav class="flex items-center gap-space-md font-body-sm text-body-sm shrink-0">
+      <a id="nav-pocetna" class="nav-link nav-active text-on-surface-variant hover:text-secondary transition-colors py-2 whitespace-nowrap cursor-pointer" onclick="switchView('pocetna', 'nav-pocetna')">Početna</a>
+      <a id="nav-katalog" class="nav-link text-on-surface-variant hover:text-secondary transition-colors py-2 whitespace-nowrap cursor-pointer" onclick="switchView('katalog', 'nav-katalog')">Katalog Proizvoda</a>
+      <a id="nav-oprema" class="nav-link text-on-surface-variant hover:text-secondary transition-colors py-2 whitespace-nowrap cursor-pointer" onclick="switchView('pocetna', 'nav-oprema'); setTimeout(()=>document.getElementById('oprema').scrollIntoView(), 100)">Opremanje Hotela & Apartmana</a>
+      <a id="nav-kontakt" class="nav-link text-on-surface-variant hover:text-secondary transition-colors py-2 whitespace-nowrap cursor-pointer" onclick="switchView('kontakt', 'nav-kontakt')">Upit & Kontakt</a>
+    </nav>
+
+    <!-- CTAs -->
+    <div class="flex items-center gap-space-sm shrink-0">
+      <a class="inline-flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-headline-sm text-[0.8125rem] border border-outline-variant/40 transition-colors whitespace-nowrap cursor-pointer" onclick="switchView('katalog', 'nav-katalog')">
+        <span class="font-label-specs text-label-specs uppercase text-on-surface-variant">Katalog 2025</span>
+      </a>
+      <a class="inline-flex items-center px-space-md py-2.5 rounded-lg bg-primary-container hover:bg-on-tertiary-fixed text-on-primary font-headline-sm text-body-sm transition-all shadow-[0_2px_10px_rgba(19,27,46,0.15)] whitespace-nowrap cursor-pointer" onclick="switchView('kontakt', 'nav-kontakt')">
+        Zatražite Ponudu (RFQ)
+      </a>
+      <button class="lg:hidden p-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors focus:outline-none shrink-0" onclick="document.getElementById('mobile-nav-drawer').classList.toggle('hidden');">
+        <span class="material-symbols-outlined text-[24px]">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav-drawer" class="hidden lg:hidden w-full bg-surface-container-lowest border-b border-surface-variant px-margin py-4 flex flex-col gap-2 shadow-lg absolute top-20 left-0">
+    <a class="py-2 px-3 rounded font-headline-sm text-sm font-semibold text-primary hover:bg-surface-container transition-colors cursor-pointer" onclick="switchView('pocetna', 'nav-pocetna')">Početna</a>
+    <a class="py-2 px-3 rounded font-headline-sm text-sm text-on-surface-variant hover:bg-surface-container transition-colors cursor-pointer" onclick="switchView('katalog', 'nav-katalog')">Katalog Proizvoda</a>
+    <a class="py-2 px-3 rounded font-headline-sm text-sm text-on-surface-variant hover:bg-surface-container transition-colors cursor-pointer" onclick="switchView('pocetna', 'nav-oprema'); setTimeout(()=>document.getElementById('oprema').scrollIntoView(), 100)">Opremanje Hotela & Apartmana</a>
+    <a class="py-2 px-3 rounded font-headline-sm text-sm text-on-surface-variant hover:bg-surface-container transition-colors cursor-pointer" onclick="switchView('kontakt', 'nav-kontakt')">Upit & Kontakt</a>
+    <div class="pt-2 border-t border-outline-variant/20 flex flex-col gap-2 mt-2">
+      <a class="w-full py-2.5 px-3 rounded text-center bg-primary-container text-on-primary font-headline-sm text-sm font-semibold cursor-pointer" onclick="switchView('kontakt', 'nav-kontakt')">Zatražite Ponudu (RFQ)</a>
+    </div>
+  </div>
+</header>
+
+<main class="w-full pt-20">
+
+<!-- ========================================== -->
+<!-- VIEW 1: POČETNA                            -->
+<!-- ========================================== -->
+<div id="pocetna" class="page-view block">
+  <!-- HERO SECTION -->
+  <section class="relative w-full overflow-hidden bg-surface-container-low pb-space-xl pt-10 fade-in-section">
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#131b2e_1px,transparent_1px)] [background-size:24px_24px]"></div>
+    <div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+        <!-- Left Copy -->
+        <div class="lg:col-span-7 flex flex-col gap-space-md">
+          <div class="inline-flex items-center gap-2 max-w-fit px-3 py-1.5 rounded bg-surface-container border border-outline-variant/30">
+            <span class="w-2 h-2 rounded-full bg-secondary"></span>
+            <span class="font-label-specs text-label-specs text-secondary uppercase tracking-widest font-semibold">PROFESIONALNI HOTELSKI & APARTMANSKI TEKSTIL | RIJEKA</span>
+          </div>
+          <h1 class="font-headline-lg text-headline-lg lg:font-display-xl lg:text-display-xl text-primary font-bold tracking-tight text-balance">
+            Vrhunski komfor za vaše goste. Dugotrajnost za vaše poslovanje.
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Specijalizirani smo za cjelovito tekstilno opremanje turističkih objekata: certificirana hotelska posteljina od češljanog pamučnog satena, luksuzni frotir ručnici visoke gramature, anatomski jastuci, negorivi popluni, hotelski madraci i boxspring kreveti izrađeni po mjeri.
+          </p>
+          <div class="flex flex-wrap items-center gap-space-sm pt-2">
+            <button class="inline-flex items-center gap-2 px-space-lg py-3.5 rounded bg-primary-container hover:bg-tertiary-container text-on-primary font-headline-sm text-body-sm transition-all shadow-md" onclick="switchView('katalog', 'nav-katalog')">
+              <span class="">Pregledajte B2B Katalog</span>
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </button>
+            <button class="inline-flex items-center gap-2 px-space-lg py-3.5 rounded bg-surface-container-lowest hover:bg-surface-container text-primary font-headline-sm text-body-sm shadow-sm transition-all" onclick="switchView('kontakt', 'nav-kontakt')">
+              <span class="material-symbols-outlined text-secondary text-[18px]">inventory_2</span>
+              <span class="">Zatražite B2B Ponudu</span>
+            </button>
+          </div>
+          <div class="pt-4 flex flex-wrap items-center gap-4 sm:gap-6 text-on-surface-variant font-label-specs text-label-specs">
+            <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-base">verified</span><span class="">ISO 9001 / OEKO-TEX® 100</span></div>
+            <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-base">local_shipping</span><span class="">Isporuka 48-72h</span></div>
+            <div class="hidden sm:flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-base">history_edu</span><span class="">25+ Godina Proizvodnje</span></div>
+          </div>
+        </div>
+        <!-- Right Visual Grid -->
+        <div class="lg:col-span-5 relative mt-8 lg:mt-0">
+          <div class="relative w-full rounded-xl overflow-hidden shadow-xl bg-surface-container-lowest">
+            <img class="w-full h-[480px] object-cover" data-alt="Editorial close-up of a high-end luxury 5-star hotel bedroom..." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCRn981nJtm0B0-l8Xc0In-HrfYq1_KtWwQIzx0Wg2VVrQIAUaEjGL45s77qdONzsX6j-Ub9AYF1NjEREbzqwzG8DjMg9SqvQeTH3bjaPNEEPiyc0XDV4wJaW1FmeDEbKSyPoxsHVR1ug7IEJIHxjnulkAaZeFPYhfI3TTbr2zWX1252HDrV3OWaBmZsBVDa60P7rxf7QtW_YWeSitWYYZo-Odi-D-VwkmnLlMPjMw7kjAoQY9_1tQOA">
+            <div class="absolute bottom-4 left-4 right-4 p-space-md rounded bg-surface-container-lowest/95 backdrop-blur-md shadow-lg">
+              <div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+                <span class="font-label-caps text-label-caps text-secondary uppercase font-bold">Standard Hotela 5★</span>
+                <span class="font-label-specs text-label-specs text-on-surface-variant font-medium">Kvaliteta: TC400 Damast</span>
+              </div>
+              <div class="grid grid-cols-3 gap-2 pt-2 text-center">
+                <div><p class="font-label-caps text-[0.625rem] text-on-surface-variant uppercase">Gustoća niti</p><p class="font-headline-sm text-sm font-bold text-on-surface">400 TC</p></div>
+                <div><p class="font-label-caps text-[0.625rem] text-on-surface-variant uppercase">Skupljanje</p><p class="font-headline-sm text-sm font-bold text-on-surface">≤ 2.8%</p></div>
+                <div><p class="font-label-caps text-[0.625rem] text-on-surface-variant uppercase">Ispiranje</p><p class="font-headline-sm text-sm font-bold text-on-surface">95°C Max</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Trust Highlights -->
+    <div class="w-full mt-space-xl bg-surface-container border-y border-outline-variant/20 py-5">
+      <div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="flex items-center gap-3"><div class="w-10 h-10 rounded bg-surface-container-lowest shadow-sm flex items-center justify-center text-secondary shrink-0"><span class="material-symbols-outlined">verified_user</span></div><div><p class="font-headline-sm text-sm font-bold text-on-surface">100% Oeko-Tex Certifikat</p><p class="font-body-sm text-xs text-on-surface-variant">Class 1 sigurno za kožu</p></div></div>
+          <div class="flex items-center gap-3"><div class="w-10 h-10 rounded bg-surface-container-lowest shadow-sm flex items-center justify-center text-secondary shrink-0"><span class="material-symbols-outlined">local_laundry_service</span></div><div><p class="font-headline-sm text-sm font-bold text-on-surface">Pranje do 95°C</p><p class="font-body-sm text-xs text-on-surface-variant">Otpornost na klor i glačanje</p></div></div>
+          <div class="flex items-center gap-3"><div class="w-10 h-10 rounded bg-surface-container-lowest shadow-sm flex items-center justify-center text-secondary shrink-0"><span class="material-symbols-outlined">near_me</span></div><div><p class="font-headline-sm text-sm font-bold text-on-surface">Ekspresna Isporuka</p><p class="font-body-sm text-xs text-on-surface-variant">RH, Istra, Dalmacija & Kvarner</p></div></div>
+          <div class="flex items-center gap-3"><div class="w-10 h-10 rounded bg-surface-container-lowest shadow-sm flex items-center justify-center text-secondary shrink-0"><span class="material-symbols-outlined">texture</span></div><div><p class="font-headline-sm text-sm font-bold text-on-surface">Besprijekoran TC 200–400</p><p class="font-body-sm text-xs text-on-surface-variant">Dugovlaknasti egipatski pamuk</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE B2B CATEGORY SHOWCASE -->
+  <section class="w-full py-space-xl bg-surface fade-in-section" id="oprema">
+    <div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-4">
+        <div>
+          <span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold">Komercijalni Asortiman</span>
+          <h2 class="font-headline-lg text-headline-lg text-primary font-bold mt-1">B2B Proizvodni Program po Mjeri</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-1">Konstruirano prema rigoroznim ISO standardima za dugogodišnju eksploataciju u hotelijerstvu i zahtjevnim apartmanima.</p>
+        </div>
+        <button class="inline-flex items-center gap-2 font-headline-sm text-body-sm font-semibold text-secondary hover:text-primary transition-colors whitespace-nowrap" onclick="switchView('katalog', 'nav-katalog')">
+          <span class="">Otvori Katalog Proizvoda</span>
+          <span class="material-symbols-outlined text-base">arrow_forward</span>
+        </button>
+      </div>
+      <!-- 6 Bento / Grid Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Cat 1 -->
+        <div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="relative h-60 overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe5mKx8wklXDxIbbMqFt4NEK7oqju82LLvx4oKmC4YPbUO-HAFhQOC2JTY87Nilie2q8IF2KP8uGVeGM2vnJlvWwY5vMky8qu-QBT_SW5aYL-ncz9tULmsh6z2qL78v3IJ6TvgR2qlkz2tqlj96viK9UJlX2Fmia5p7skrWjGcKGmGqyIT8ZyTVICgnrb9E3yC7o4NrcL8iKif-BM9t1LB_xNCiHah3ZQlgvhiNMDpSPpvBjLw9af4Hg">
+            <div class="absolute top-3 right-3 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur font-label-specs text-label-specs text-on-surface font-semibold shadow-sm">TC 200 - 400</div>
+          </div>
+          <div class="p-space-md flex flex-col flex-1 justify-between gap-4">
+            <div>
+              <span class="font-label-caps text-[0.6875rem] text-secondary uppercase font-bold tracking-wider">Spavaći Program</span>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">Hotelska Posteljina</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">Satenski prugasti damast (4mm i 20mm), glatki TC300 perkal, navlake za poplune s hotelskim preklopom, elastične plahte i navlake za jastuke.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-2 py-1 bg-surface-container-low rounded font-label-specs text-[0.7rem] text-on-surface-variant">100% Češljani Pamuk</span>
+                <span class="px-2 py-1 bg-surface-container-low rounded font-label-specs text-[0.7rem] text-on-surface-variant">Pranje 95°C</span>
+                <span class="px-2 py-1 bg-surface-container-low rounded font-label-specs text-[0.7rem] text-on-surface-variant">Bez Glačanja Easy-Care</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="font-label-specs text-label-specs text-on-surface-variant font-medium">Min. narudžba: 20 setova</span>
+              <button class="text-primary hover:text-secondary font-headline-sm text-xs font-bold uppercase tracking-wider flex items-center gap-1" onclick="switchView('katalog', 'nav-katalog')">Specifikacija <span class="material-symbols-outlined text-sm">chevron_right</span></button>
+            </div>
+          </div>
+        </div>
+        <!-- Cat 2 -->
+        <div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="relative h-60 overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvTLyDbvZaj1x42Cs8vkuP6AGjnoiqGRspS3uDOnNyX1fE09bNX5S1PNDe-H8UX73ycMZnZsj0IJTsRIVkh0QIrj8IKwUJP2TqS62HDAYLA81ddjP3QAVgoXox4Ab781mWlG6W3N7UKrnF-SLldpOFcD9p3HaTt_pjnLvpyrEcF_T7_ItkxgekLfW8_R16fK5wDHJS8g_I5eEUkdi_Y3Ky0JiNPENCaomIPRhqyFR81SthBjfXf6lSSg">
+            <div class="absolute top-3 right-3 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur font-label-specs text-label-specs text-on-surface font-semibold shadow-sm">500 - 650 g/m²</div>
+          </div>
+          <div class="p-space-md flex flex-col flex-1 justify-between gap-4">
+            <div>
+              <span class="font-label-caps text-[0.6875rem] text-secondary uppercase font-bold tracking-wider">Kupaonica & Spa</span>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">Ručnici & Ogrtači</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">Luksuzni frotir ručnici visoke upojnosti, dvostruko opšiveni rubovi protiv paranja, kupaonski tepisi 800 g/m² te kimono ili šal velur spa ogrtači.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-2 py-1 bg-surface-container-low rounded font-label-specs text-[0.7rem] text-on-surface-variant">Dvostruka Ring Pređa</span>
+                <span class="px-2 py-1 bg-surface-container-low rounded font-label-specs text-[0.7rem] text-on-surface-variant">Otporno na čupanje</span>
+                <span class="px-2 py-1 bg-surface-container-low rounded font-label-specs text-[0.7rem] text-on-surface-variant">Strojni Vez Logotipa</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="font-label-specs text-label-specs text-on-surface-variant font-medium">Min. narudžba: 50 kom</span>
+              <button class="text-primary hover:text-secondary font-headline-sm text-xs font-bold uppercase tracking-wider flex items-center gap-1" onclick="switchView('katalog', 'nav-katalog')">Specifikacija <span class="material-symbols-outlined text-sm">chevron_right</span></button>
+            </div>
+          </div>
+        </div>
+        <!-- Cat 3 -->
+        <div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="relative h-60 overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_Kvq4KlZnvb7qwWNrXokQGbyL6LyxcvFCVAFQS6BijQSPHmjF18sfxvLOfRkudSjHoOU-pPhc2fboHjyRP4vc2NHhwwd_lF3Tde3jVB-sCpEaF8L0foT-t7zO7SfA_3nieWOdnzWYDu0UfCWmk_CizK228KjQ2MHx1B3ewcNLK1mytsRwh2z3LU-UDH_aecVKO308-t8--pyewZuQkRpH5ibFJ8-68jl604PmSluAIjY06TyvPg75ng">
+            <div class="absolute top-3 right-3 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur font-label-specs text-label-specs text-on-surface font-semibold shadow-sm">Antialergijsko</div>
+          </div>
+          <div class="p-space-md flex flex-col flex-1 justify-between gap-4">
+            <div>
+              <span class="font-label-caps text-[0.6875rem] text-secondary uppercase font-bold tracking-wider">Ispune & Ergonomija</span>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">Jastuci & Popluni</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">Silikonizirane kuglice za dugotrajnu elastičnost bez grudanja, cjelogodišnji i ljetni negorivi popluni, perivi na 60°C i 95°C za hotelske higijenske standarde.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-2 py-1 bg-surface-container-low rounded font-label-specs text-[0.7rem] text-on-surface-variant">PES Kuglice 1. Klase</span>
+                <span class="px-2 py-1 bg-surface-container-low rounded font-label-specs text-[0.7rem] text-on-surface-variant">Prošivena Konstrukcija</span>
+                <span class="px-2 py-1 bg-surface-container-low rounded font-label-specs text-[0.7rem] text-on-surface-variant">EN ISO 12952</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="font-label-specs text-label-specs text-on-surface-variant font-medium">Min. narudžba: 15 kom</span>
+              <button class="text-primary hover:text-secondary font-headline-sm text-xs font-bold uppercase tracking-wider flex items-center gap-1" onclick="switchView('katalog', 'nav-katalog')">Specifikacija <span class="material-symbols-outlined text-sm">chevron_right</span></button>
+            </div>
+          </div>
+        </div>
+        <!-- Cat 4 -->
+        <div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="relative h-60 overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxQcq5iquDJxjWiA2apG7kh2Pq3WTfj9ZOdGcqO46BlW2TnkafQ6E329wRQNUATdqY9LCc-wtkp0PpX2Gy0orqOEvM1WBq5mx_nTAMROZ3ZAHr2vwLzGhJuG2TGoAxFPoIXqg12sWek5jaVW6FDnAvDxsc9oGNcxCSkwMgkWVJLo8bJmKoeu63bAnL5fI7Rw4woZ505EtMuAqpipY3QcRPQpLP7GXXzXTyPcHuU6YNeOOSLkqW6Eds9w">
+            <div class="absolute top-3 right-3 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur font-label-specs text-label-specs text-on-surface font-semibold shadow-sm">7-Zona Džepičasta</div>
+          </div>
+          <div class="p-space-md flex flex-col flex-1 justify-between gap-4">
+            <div>
+              <span class="font-label-caps text-[0.6875rem] text-secondary uppercase font-bold tracking-wider">Spavaći Sustavi</span>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">Hotelski Madraci & Boxspring</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">Pojačana džepičasta i bonell jezgra s ojačanim rubovima od PU pjene za lakše ustajanje gostiju. Baze izrađene od masiva sa spojnim zip sustavima.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-2 py-1 bg-surface-container-low rounded font-label-specs text-[0.7rem] text-on-surface-variant">Visina 24-32 cm</span>
+                <span class="px-2 py-1 bg-surface-container-low rounded font-label-specs text-[0.7rem] text-on-surface-variant">Negorivo CRIB 5</span>
+                <span class="px-2 py-1 bg-surface-container-low rounded font-label-specs text-[0.7rem] text-on-surface-variant">Izrada po Mjeri</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="font-label-specs text-label-specs text-on-surface-variant font-medium">Projektne količine</span>
+              <button class="text-primary hover:text-secondary font-headline-sm text-xs font-bold uppercase tracking-wider flex items-center gap-1" onclick="switchView('katalog', 'nav-katalog')">Specifikacija <span class="material-symbols-outlined text-sm">chevron_right</span></button>
+            </div>
+          </div>
+        </div>
+        <!-- Cat 5 -->
+        <div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="relative h-60 overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzVFaaUSN2r3EazR99g1NkUgajRx5eEw6L4crl1WR3Hhlh0CAxgvdQkJPvJsOFv3zTMqHHBtYr1wm85Q4iwPFfwmBytXm6qA14MrOquQIXbUKhEECnxz0yFsJTfvdCD-JfTtub9nIBOSy8xSebJsPTaMAeh-Z8DZggh-dn33LO3t2ro2JHXeQ27AwqlrgHE6v7QRevayf9-gmCMN88mIMr8oMRmMlSlExpnvV7TPV1q3p4_Shq-T8gCg">
+            <div class="absolute top-3 right-3 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur font-label-specs text-label-specs text-on-surface font-semibold shadow-sm">Vodonepropusno & Bešumno</div>
+          </div>
+          <div class="p-space-md flex flex-col flex-1 justify-between gap-4">
+            <div>
+              <span class="font-label-caps text-[0.6875rem] text-secondary uppercase font-bold tracking-wider">Higijenska Zaštita</span>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">Zaštitne Navlake & Nadmadraci</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">Poliuretanska PU membrana koja omogućuje cirkulaciju zraka, a sprječava prodor tekućina i grinja. Povećava trajnost hotelskih madraca za preko 50%.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-2 py-1 bg-surface-container-low rounded font-label-specs text-[0.7rem] text-on-surface-variant">Paropropusno</span>
+                <span class="px-2 py-1 bg-surface-container-low rounded font-label-specs text-[0.7rem] text-on-surface-variant">Pranje na 90°C</span>
+                <span class="px-2 py-1 bg-surface-container-low rounded font-label-specs text-[0.7rem] text-on-surface-variant">Antibakterijski tretman</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="font-label-specs text-label-specs text-on-surface-variant font-medium">Min. narudžba: 20 kom</span>
+              <button class="text-primary hover:text-secondary font-headline-sm text-xs font-bold uppercase tracking-wider flex items-center gap-1" onclick="switchView('katalog', 'nav-katalog')">Specifikacija <span class="material-symbols-outlined text-sm">chevron_right</span></button>
+            </div>
+          </div>
+        </div>
+        <!-- Cat 6 -->
+        <div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="relative h-60 overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6izRDeaCmBgO0dj-4vfda_h4QZn-OVdHBOKK-m2qLbSoq5PHeSZf1Ez5Zi4NjPyn_HSHRWqFuKt4wXUulAeRPotAzf2sISIvt1K2lPZm7TzYeJ0mZccQPP0lic0EJldBW503i21WZjqSbG07AgYpnv7I2wVUYRIrPAPxiibiaLvKugu_K0jphqfO3-J1BTpRCwuyLiYO7UJ7XpfctKoSWE15y5l4HND7DbvR_plmFg87qBqxgGM0jeg">
+            <div class="absolute top-3 right-3 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur font-label-specs text-label-specs text-on-surface font-semibold shadow-sm">FR Certifikat B1 / M1</div>
+          </div>
+          <div class="p-space-md flex flex-col flex-1 justify-between gap-4">
+            <div>
+              <span class="font-label-caps text-[0.6875rem] text-secondary uppercase font-bold tracking-wider">Interijer & F&B</span>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">Zavjese & Stolni Program</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">100% Blackout zamračujuće i dimout negorive zavjese, perivi teflonski stolnjaci s vodoodbojnim premazom, banketne navlake i personalizirani nadstolnjaci.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-2 py-1 bg-surface-container-low rounded font-label-specs text-[0.7rem] text-on-surface-variant">Teflon Zaštita</span>
+                <span class="px-2 py-1 bg-surface-container-low rounded font-label-specs text-[0.7rem] text-on-surface-variant">100% Zatamnjenje</span>
+                <span class="px-2 py-1 bg-surface-container-low rounded font-label-specs text-[0.7rem] text-on-surface-variant">Šivanje po mjeri</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="font-label-specs text-label-specs text-on-surface-variant font-medium">Besprijekoran pad</span>
+              <button class="text-primary hover:text-secondary font-headline-sm text-xs font-bold uppercase tracking-wider flex items-center gap-1" onclick="switchView('katalog', 'nav-katalog')">Specifikacija <span class="material-symbols-outlined text-sm">chevron_right</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZAŠTO BIRAJU REMTEX PRO -->
+  <section class="w-full py-space-xl bg-surface-container-low fade-in-section">
+    <div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop">
+      <div class="text-center max-w-2xl mx-auto mb-space-xl">
+        <span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold">Standard Pouzdanosti</span>
+        <h2 class="font-headline-lg text-headline-lg text-primary font-bold mt-2">Zašto vodeći hoteli i vile biraju RemTex Pro?</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant mt-2">Pružamo direktnu podršku hotelijerima kroz cijeli ciklus: od odabira uzoraka tkanine do postprodajne zamjene.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+          <div><div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-5"><span class="material-symbols-outlined text-2xl">factory</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Tvornička Cijena</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">Naša direktna nabava tkanina i vlastiti doradni pogon u Rijeci jamče konkurentne veleprodajne uvjete.</p></div>
+          <div class="pt-4 mt-4 border-t border-outline-variant/20 font-label-specs text-label-specs text-secondary font-semibold">↓ 20-35% Ušteda pri serijama</div>
+        </div>
+        <div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+          <div><div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-5"><span class="material-symbols-outlined text-2xl">square_foot</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Nestandardne Dimenzije</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">Imate krevete od 220 cm ili visoke madrace? Šivamo precizno prema vašoj specifikaciji.</p></div>
+          <div class="pt-4 mt-4 border-t border-outline-variant/20 font-label-specs text-label-specs text-secondary font-semibold">Potpuna fleksibilnost kroja</div>
+        </div>
+        <div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+          <div><div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-5"><span class="material-symbols-outlined text-2xl">mark_email_read</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Uzorci i Swatch Box</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">Besplatno šaljemo reprezentativne uzorke damasta i frotira radi testiranja u praonici.</p></div>
+          <div class="pt-4 mt-4 border-t border-outline-variant/20 font-label-specs text-label-specs text-secondary font-semibold">Dostava uzoraka unutar 24 sata</div>
+        </div>
+        <div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+          <div><div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-5"><span class="material-symbols-outlined text-2xl">diamond</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Personalizacija (Vez)</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">Nudimo industrijski strojni vez logotipa u visokoj rezoluciji na ručnike, ogrtače i posteljinu.</p></div>
+          <div class="pt-4 mt-4 border-t border-outline-variant/20 font-label-specs text-label-specs text-secondary font-semibold">Postojanost boje pri 95°C pranju</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- B2B OUTFITTING PACKAGE CALCULATOR -->
+  <section class="w-full py-space-xl bg-surface fade-in-section" id="b2b-kalkulator">
+    <div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+        <div class="lg:col-span-5 flex flex-col gap-space-md">
+          <div>
+            <span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold">B2B Predkonfigurirani Paketi</span>
+            <h2 class="font-headline-lg text-headline-lg text-primary font-bold mt-1">Tekstilni Paketi po Mjeri Objekta</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-2">Bilo da pripremate 3 luksuzna apartmana ili opremate boutique hotel s 40 soba, pripremili smo optimizirane setove s 3 izmjene po ležaju.</p>
+          </div>
+          <div class="flex flex-col gap-3" id="package-selectors">
+            <button class="text-left p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex items-start gap-4 border-l-4 border-secondary" id="btn-apartments" onclick="selectPackage('apartments')" type="button">
+              <div class="p-2 rounded bg-surface-container text-primary shrink-0"><span class="material-symbols-outlined text-xl">apartment</span></div>
+              <div><div class="flex items-center justify-between flex-wrap"><h4 class="font-headline-sm text-sm font-bold text-on-surface">Start Paket (3-5★)</h4><span class="font-label-specs text-label-specs text-secondary font-bold">Preporučeno</span></div><p class="font-body-sm text-xs text-on-surface-variant mt-1">Satenski damast, 3 garniture posteljine po sobi, ručnici 500g.</p></div>
+            </button>
+            <button class="text-left p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex items-start gap-4 border-l-4 border-transparent" id="btn-boutique" onclick="selectPackage('boutique')" type="button">
+              <div class="p-2 rounded bg-surface-container text-primary shrink-0"><span class="material-symbols-outlined text-xl">villa</span></div>
+              <div><div class="flex items-center justify-between flex-wrap"><h4 class="font-headline-sm text-sm font-bold text-on-surface">Boutique Hotel (4-5★)</h4><span class="font-label-specs text-label-specs text-on-surface-variant">Visoki Standard</span></div><p class="font-body-sm text-xs text-on-surface-variant mt-1">TC300 češljani pamuk, ručnici 550g, anatomski jastuci 2 kom/ležaj.</p></div>
+            </button>
+            <button class="text-left p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex items-start gap-4 border-l-4 border-transparent" id="btn-resort" onclick="selectPackage('resort')" type="button">
+              <div class="p-2 rounded bg-surface-container text-primary shrink-0"><span class="material-symbols-outlined text-xl">spa</span></div>
+              <div><div class="flex items-center justify-between flex-wrap"><h4 class="font-headline-sm text-sm font-bold text-on-surface">Resort Kolekcija (5★)</h4><span class="font-label-specs text-label-specs text-on-surface-variant">Total Hospitality</span></div><p class="font-body-sm text-xs text-on-surface-variant mt-1">TC400 Egipatski pamuk, ručnici 650g, FR blackout zavjese.</p></div>
+            </button>
+          </div>
+          <div class="p-4 rounded-xl bg-surface-container text-on-surface font-body-sm text-xs flex items-center gap-3">
+            <span class="material-symbols-outlined text-secondary text-xl flex-shrink-0">info</span>
+            <span class="">Svaki paket uključuje standardnu preporuku od <strong>3 rotirajuće garniture</strong> (jedna na krevetu, jedna u pripremi, jedna u pranju).</span>
+          </div>
+        </div>
+        <!-- Right Interactive Configuration Card -->
+        <div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-lg mt-6 lg:mt-0">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-space-sm border-b border-outline-variant/20">
+            <div><span class="font-label-specs text-label-specs text-secondary uppercase font-bold" id="package-badge">Paket: Start Apartmani</span><h3 class="font-headline-sm text-headline-md text-on-surface font-bold" id="package-title">Kalkulator Potrebnog Tekstila</h3></div>
+            <span class="px-3 py-1 bg-surface-container text-on-surface font-label-specs text-label-specs rounded-full w-fit">B2B Informativni Prikaz</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md my-space-md">
+            <div class="flex flex-col justify-between p-3.5 rounded-lg bg-surface-container-low/70 border border-outline-variant/30 gap-2">
+              <div class="flex justify-between items-center"><label class="font-headline-sm text-xs font-bold uppercase text-on-surface whitespace-nowrap" for="input-rooms">Broj Smještajnih Jedinica</label><span class="font-label-specs text-sm font-bold text-secondary px-2 py-0.5 rounded bg-surface-container-lowest shadow-sm whitespace-nowrap" id="rooms-display">6 Soba / Apt</span></div>
+              <input class="w-full accent-primary h-2 bg-surface-container rounded-lg cursor-pointer my-1" id="input-rooms" max="50" min="1" oninput="updateCalculator()" type="range" value="6">
+              <div class="flex justify-between items-center text-[0.7rem] text-on-surface-variant font-label-specs"><span class="">1 jedinica</span><span class="">50 jedinica</span></div>
+            </div>
+            <div class="flex flex-col justify-between p-3.5 rounded-lg bg-surface-container-low/70 border border-outline-variant/30 gap-2">
+              <div class="flex justify-between items-center"><label class="font-headline-sm text-xs font-bold uppercase text-on-surface whitespace-nowrap" for="input-beds">Prosjek Ležajeva</label><span class="font-label-specs text-sm font-bold text-secondary px-2 py-0.5 rounded bg-surface-container-lowest shadow-sm whitespace-nowrap" id="beds-display">2 Ležaja (Bračni)</span></div>
+              <select class="h-10 px-3 rounded bg-surface-container-lowest border border-outline-variant/40 text-on-surface font-body-sm text-xs focus:outline-none focus:border-primary w-full" id="input-beds" onchange="updateCalculator()">
+                <option value="2">2 ležaja (1x bračni krevet)</option>
+                <option value="4">4 ležaja (1x bračni + 2x single)</option>
+                <option value="6">6 ležajeva (suite / vila)</option>
+              </select>
+            </div>
+          </div>
+          <div class="bg-surface-container-low rounded-lg p-space-md mb-space-md overflow-x-auto">
+            <div class="flex items-center justify-between pb-3 border-b border-outline-variant/20 mb-3 min-w-[300px]">
+              <span class="font-label-caps text-label-caps text-on-surface-variant uppercase font-bold">Artikl u paketu (3 izmjene)</span>
+              <span class="font-label-caps text-label-caps text-on-surface-variant uppercase font-bold">Količina (kom)</span>
+            </div>
+            <div class="flex flex-col gap-2.5 font-body-sm text-xs min-w-[300px]">
+              <div class="flex justify-between items-center"><span class="text-on-surface font-medium pr-2">Navlake za poplun</span><span class="font-label-specs font-bold text-on-surface whitespace-nowrap" id="calc-bedding">36 kom</span></div>
+              <div class="flex justify-between items-center"><span class="text-on-surface font-medium pr-2">Plahte s gumicom</span><span class="font-label-specs font-bold text-on-surface whitespace-nowrap" id="calc-sheets">36 kom</span></div>
+              <div class="flex justify-between items-center"><span class="text-on-surface font-medium pr-2">Jastučnice</span><span class="font-label-specs font-bold text-on-surface whitespace-nowrap" id="calc-pillowcases">72 kom</span></div>
+              <div class="flex justify-between items-center"><span class="text-on-surface font-medium pr-2">Kupatilski ručnici</span><span class="font-label-specs font-bold text-on-surface whitespace-nowrap" id="calc-towels-large">72 kom</span></div>
+              <div class="flex justify-between items-center"><span class="text-on-surface font-medium pr-2">Ručnici za lice i ruke</span><span class="font-label-specs font-bold text-on-surface whitespace-nowrap" id="calc-towels-hand">72 kom</span></div>
+              <div class="flex justify-between items-center"><span class="text-on-surface font-medium pr-2">Kupaonske stope / tepisi</span><span class="font-label-specs font-bold text-on-surface whitespace-nowrap" id="calc-mats">18 kom</span></div>
+              <div class="flex justify-between items-center"><span class="text-on-surface font-medium pr-2">Vodonepropusne PU zaštite</span><span class="font-label-specs font-bold text-on-surface whitespace-nowrap" id="calc-protectors">12 kom</span></div>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-left w-full sm:w-auto"><span class="font-label-specs text-label-specs text-on-surface-variant">Procjena isporuke sa skladišta:</span><p class="font-headline-sm text-sm font-bold text-on-surface">3-5 Radnih Dana | Rijeka Hub</p></div>
+            <button class="w-full sm:w-auto px-space-lg py-3 rounded bg-primary text-on-primary font-headline-sm text-xs uppercase tracking-wider font-bold hover:bg-surface-variant hover:text-on-surface transition-colors text-center whitespace-nowrap" onclick="switchView('kontakt', 'nav-kontakt')">Zatražite Točan Izračun</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CLIENT TRUST & REFERENCE LOCATIONS (WITH HORIZONTAL MARQUEE) -->
+  <section class="w-full py-space-xl bg-surface-container-low border-t border-outline-variant/10 fade-in-section">
+    <div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop">
+      <div class="flex flex-col md:flex-row items-start md:items-end justify-between mb-space-lg gap-4">
+        <div>
+          <span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold">Reference & Iskustva</span>
+          <h2 class="font-headline-lg text-headline-lg text-primary font-bold mt-1">Opremili smo preko 4.500 ključeva diljem Jadrana</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-1">Od obiteljskih boutique hotela na Kvarneru do luksuznih vila s 5 zvjezdica u Dubrovniku i Istri.</p>
+        </div>
+        <!-- Reference Location Badges -->
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1.5 rounded bg-surface-container-lowest font-label-specs text-xs text-on-surface shadow-sm font-medium">Opatija</span>
+          <span class="px-3 py-1.5 rounded bg-surface-container-lowest font-label-specs text-xs text-on-surface shadow-sm font-medium">Rovinj</span>
+          <span class="px-3 py-1.5 rounded bg-surface-container-lowest font-label-specs text-xs text-on-surface shadow-sm font-medium">Zadar</span>
+          <span class="px-3 py-1.5 rounded bg-surface-container-lowest font-label-specs text-xs text-on-surface shadow-sm font-medium">Split</span>
+          <span class="px-3 py-1.5 rounded bg-surface-container-lowest font-label-specs text-xs text-on-surface shadow-sm font-medium">Dubrovnik</span>
+          <span class="px-3 py-1.5 rounded bg-surface-container-lowest font-label-specs text-xs text-on-surface shadow-sm font-medium">Zagreb</span>
+        </div>
+      </div>
+      
+      <!-- Infinite Horizontal Marquee for Reviews -->
+      <div class="overflow-hidden relative mask-horizontal w-full py-4">
+        <div class="flex gap-6 animate-marquee-x">
+          <!-- Item 1 -->
+          <div class="w-[85vw] sm:w-[400px] p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden shrink-0">
+            <div class="absolute top-0 left-0 bottom-0 w-1 bg-secondary"></div>
+            <div>
+              <div class="flex items-center gap-1 text-secondary mb-3"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span></div>
+              <p class="font-body-md text-body-md text-on-surface italic leading-relaxed">“U hotelijerstvu je praonica nemilosrdna prema tekstilu. RemTex Pro satenski damast 2cm nakon dvije intenzivne sezone i više od 120 ciklusa industrijskog pranja izgleda postojano i bez gubitka sjaja. Iznimna podrška u sezoni.”</p>
+            </div>
+            <div class="pt-4 mt-6 border-t border-outline-variant/20 flex flex-col"><span class="font-headline-sm text-sm font-bold text-on-surface">Marko V.</span><span class="font-body-sm text-xs text-on-surface-variant">Direktor Operacija, Boutique Hotel & Spa</span></div>
+          </div>
+          <!-- Item 2 -->
+          <div class="w-[85vw] sm:w-[400px] p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden shrink-0">
+            <div class="absolute top-0 left-0 bottom-0 w-1 bg-secondary"></div>
+            <div>
+              <div class="flex items-center gap-1 text-secondary mb-3"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span></div>
+              <p class="font-body-md text-body-md text-on-surface italic leading-relaxed">“Upravljamo s 14 luksuznih vila u Istri. Mogućnost izrade plahti i zaštitnih navlaka za nestandardne madrace visine 34 cm riješila nam je dugogodišnji problem s nabavom. Gosti redovito hvale mekoću ručnika od 600 grama.”</p>
+            </div>
+            <div class="pt-4 mt-6 border-t border-outline-variant/20 flex flex-col"><span class="font-headline-sm text-sm font-bold text-on-surface">Elena K.</span><span class="font-body-sm text-xs text-on-surface-variant">Property Manager, Istria Deluxe Estates</span></div>
+          </div>
+          <!-- Item 3 -->
+          <div class="w-[85vw] sm:w-[400px] p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden shrink-0">
+            <div class="absolute top-0 left-0 bottom-0 w-1 bg-secondary"></div>
+            <div>
+              <div class="flex items-center gap-1 text-secondary mb-3"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span></div>
+              <p class="font-body-md text-body-md text-on-surface italic leading-relaxed">“Strojni vez našeg grba na kupaonskim ogrtačima i ručnicima izveden je besprijekorno. Naručili smo uzorke u ponedjeljak, u utorak su bili u Dubrovniku. Cijenimo brzinu i profesionalni pristup B2B narudžbama.”</p>
+            </div>
+            <div class="pt-4 mt-6 border-t border-outline-variant/20 flex flex-col"><span class="font-headline-sm text-sm font-bold text-on-surface">Ivan B.</span><span class="font-body-sm text-xs text-on-surface-variant">Voditelj Nabave, Villa Heritage Suites</span></div>
+          </div>
+          
+          <!-- Duplicated block for infinite loop seamless transition -->
+          <!-- Item 1 (Dup) -->
+          <div class="w-[85vw] sm:w-[400px] p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden shrink-0">
+            <div class="absolute top-0 left-0 bottom-0 w-1 bg-secondary"></div>
+            <div>
+              <div class="flex items-center gap-1 text-secondary mb-3"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span></div>
+              <p class="font-body-md text-body-md text-on-surface italic leading-relaxed">“U hotelijerstvu je praonica nemilosrdna prema tekstilu. RemTex Pro satenski damast 2cm nakon dvije intenzivne sezone i više od 120 ciklusa industrijskog pranja izgleda postojano i bez gubitka sjaja. Iznimna podrška u sezoni.”</p>
+            </div>
+            <div class="pt-4 mt-6 border-t border-outline-variant/20 flex flex-col"><span class="font-headline-sm text-sm font-bold text-on-surface">Marko V.</span><span class="font-body-sm text-xs text-on-surface-variant">Direktor Operacija, Boutique Hotel & Spa</span></div>
+          </div>
+          <!-- Item 2 (Dup) -->
+          <div class="w-[85vw] sm:w-[400px] p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden shrink-0">
+            <div class="absolute top-0 left-0 bottom-0 w-1 bg-secondary"></div>
+            <div>
+              <div class="flex items-center gap-1 text-secondary mb-3"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span></div>
+              <p class="font-body-md text-body-md text-on-surface italic leading-relaxed">“Upravljamo s 14 luksuznih vila u Istri. Mogućnost izrade plahti i zaštitnih navlaka za nestandardne madrace visine 34 cm riješila nam je dugogodišnji problem s nabavom. Gosti redovito hvale mekoću ručnika od 600 grama.”</p>
+            </div>
+            <div class="pt-4 mt-6 border-t border-outline-variant/20 flex flex-col"><span class="font-headline-sm text-sm font-bold text-on-surface">Elena K.</span><span class="font-body-sm text-xs text-on-surface-variant">Property Manager, Istria Deluxe Estates</span></div>
+          </div>
+          <!-- Item 3 (Dup) -->
+          <div class="w-[85vw] sm:w-[400px] p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden shrink-0">
+            <div class="absolute top-0 left-0 bottom-0 w-1 bg-secondary"></div>
+            <div>
+              <div class="flex items-center gap-1 text-secondary mb-3"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span></div>
+              <p class="font-body-md text-body-md text-on-surface italic leading-relaxed">“Strojni vez našeg grba na kupaonskim ogrtačima i ručnicima izveden je besprijekorno. Naručili smo uzorke u ponedjeljak, u utorak su bili u Dubrovniku. Cijenimo brzinu i profesionalni pristup B2B narudžbama.”</p>
+            </div>
+            <div class="pt-4 mt-6 border-t border-outline-variant/20 flex flex-col"><span class="font-headline-sm text-sm font-bold text-on-surface">Ivan B.</span><span class="font-body-sm text-xs text-on-surface-variant">Voditelj Nabave, Villa Heritage Suites</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ========================================== -->
+<!-- VIEW 2: KATALOG                            -->
+<!-- ========================================== -->
+<div id="katalog" class="page-view hidden">
+  <section class="relative w-full bg-surface-container-low px-margin md:px-margin-tablet lg:px-margin-desktop py-space-lg overflow-hidden border-t border-outline-variant/10 fade-in-section">
+    <div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-secondary-fixed opacity-40 blur-3xl pointer-events-none"></div>
+    <div class="absolute left-1/3 -bottom-20 w-80 h-80 rounded-full bg-tertiary-fixed opacity-30 blur-2xl pointer-events-none"></div>
+    <div class="relative max-w-[1440px] mx-auto flex flex-col gap-space-md">
+      <div class="flex flex-wrap items-center justify-between gap-space-sm font-label-specs text-label-specs text-on-surface-variant">
+        <div class="inline-flex items-center gap-2 px-space-sm py-1 rounded-full bg-surface-container-lowest shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-caps text-label-caps uppercase text-secondary">Ažurirano za sezonu 2025</span><span class="opacity-30">|</span><span class="font-label-specs text-label-specs text-on-surface-variant">Standard ISO 9001</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-end">
+        <div class="lg:col-span-8 flex flex-col gap-space-xs">
+          <span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Profesionalni Hotelski Tekstil</span>
+          <h1 class="font-headline-lg text-headline-lg lg:text-display-xl text-on-surface tracking-tight font-bold">Katalog Tekstila za Hotele i Apartmane</h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mt-space-xs">Istražite našu profesionalnu ponudu testiranu na rigorozne uvjete hotelskog pranja i industrijskog održavanja. Cijene i količinski rabati formiraju se na upit za pravne osobe, hotelske grupacije i iznajmljivače na Jadranu.</p>
+        </div>
+        <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-sm justify-end mt-4 lg:mt-0">
+          <button class="inline-flex items-center justify-center gap-space-xs px-space-md py-3.5 rounded-lg bg-primary-container text-on-primary font-headline-sm text-body-sm shadow-md hover:bg-on-tertiary-fixed transition-all group whitespace-nowrap">
+            <span class="material-symbols-outlined text-[20px] text-secondary-fixed">download</span><span class="font-semibold">Preuzmi PDF katalog 2024/2025</span><span class="font-label-specs text-label-specs opacity-70 ml-1">(18.4 MB)</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-[1440px] w-full mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl fade-in-section">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+      
+      <!-- LEFT SIDEBAR: Filters -->
+      <aside class="lg:col-span-3 flex flex-col gap-space-md lg:sticky lg:top-24">
+        <button class="lg:hidden w-full py-2.5 px-space-sm rounded-lg bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex items-center justify-between text-on-surface font-headline-sm text-body-sm" onclick="document.getElementById('procurement-filter-card').classList.toggle('hidden')" type="button"><span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-secondary">tune</span><span class="">Filteri Kataloga</span></span><span class="material-symbols-outlined text-[18px]">expand_more</span></button>
+        <div class="hidden lg:flex bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md" id="procurement-filter-card">
+          <div class="flex items-center justify-between pb-space-xs"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px] text-secondary">tune</span><h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Filteri Kataloga</h3></div><button class="font-label-specs text-label-specs text-secondary hover:underline cursor-pointer" type="button">Poništi sve</button></div>
+          <div class="flex flex-col gap-1.5"><label class="font-label-specs text-label-specs uppercase text-on-surface-variant">Pretraga po SKU ili nazivu</label><div class="relative"><span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-outline">search</span><input class="w-full pl-9 pr-3 py-2 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm focus:outline-none focus:bg-surface-container-lowest" placeholder="npr. Saten, 550g, RTP-..." type="text"></div></div>
+          
+          <div class="flex flex-col gap-space-xs">
+            <div class="flex items-center justify-between text-on-surface"><span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">Kategorija Proizvoda</span><span class="font-label-specs text-label-specs text-on-surface-variant">7 grupa</span></div>
+            <div class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant">
+              <label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors group"><span class="flex items-center gap-2 group-hover:text-on-surface"><input checked class="accent-primary w-4 h-4" type="checkbox"><span class="text-on-surface">Posteljina i jastučnice</span></span><span class="font-label-specs text-label-specs text-on-surface-variant">14</span></label>
+              <label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors group"><span class="flex items-center gap-2 group-hover:text-on-surface"><input checked class="accent-primary w-4 h-4" type="checkbox"><span class="text-on-surface">Kupaonski program & Frotir</span></span><span class="font-label-specs text-label-specs text-on-surface-variant">18</span></label>
+              <label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors group"><span class="flex items-center gap-2 group-hover:text-on-surface"><input class="accent-primary w-4 h-4" type="checkbox"><span class="text-on-surface">Jastuci i punjeni popluni</span></span><span class="font-label-specs text-label-specs text-on-surface-variant">9</span></label>
+              <label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors group"><span class="flex items-center gap-2 group-hover:text-on-surface"><input class="accent-primary w-4 h-4" type="checkbox"><span class="text-on-surface">Madraci & Boxspring kreveti</span></span><span class="font-label-specs text-label-specs text-on-surface-variant">6</span></label>
+              <label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors group"><span class="flex items-center gap-2 group-hover:text-on-surface"><input class="accent-primary w-4 h-4" type="checkbox"><span class="text-on-surface">Zaštitni program (Vodonepropusno)</span></span><span class="font-label-specs text-label-specs text-on-surface-variant">8</span></label>
+              <label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors group"><span class="flex items-center gap-2 group-hover:text-on-surface"><input class="accent-primary w-4 h-4" type="checkbox"><span class="text-on-surface">Stolno rublje & Restorani</span></span><span class="font-label-specs text-label-specs text-on-surface-variant">11</span></label>
+              <label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors group"><span class="flex items-center gap-2 group-hover:text-on-surface"><input class="accent-primary w-4 h-4" type="checkbox"><span class="text-on-surface">Negorive Zavjese & Vanjski tekstil</span></span><span class="font-label-specs text-label-specs text-on-surface-variant">7</span></label>
+            </div>
+          </div>
+          <!-- Materials -->
+          <div class="flex flex-col gap-space-xs pt-2">
+            <span class="font-label-caps text-label-caps uppercase tracking-wider font-bold text-on-surface">Sastav Materijala</span>
+            <div class="flex flex-wrap gap-1.5 font-label-specs text-label-specs">
+              <span class="px-2.5 py-1.5 rounded-md bg-primary-container text-on-primary font-medium cursor-pointer shadow-sm">100% Češljani Pamuk</span>
+              <span class="px-2.5 py-1.5 rounded-md bg-surface-container-low text-on-surface hover:bg-surface-container cursor-pointer transition-colors">Pamuk/PES 80:20</span>
+              <span class="px-2.5 py-1.5 rounded-md bg-surface-container-low text-on-surface hover:bg-surface-container cursor-pointer transition-colors">100% Mako-Saten</span>
+              <span class="px-2.5 py-1.5 rounded-md bg-surface-container-low text-on-surface hover:bg-surface-container cursor-pointer transition-colors">Dvostruka Frotir Omča (Ring-Spun)</span>
+              <span class="px-2.5 py-1.5 rounded-md bg-surface-container-low text-on-surface hover:bg-surface-container cursor-pointer transition-colors">Trevira CS Negorivo</span>
+            </div>
+          </div>
+          <!-- Density -->
+          <div class="flex flex-col gap-space-xs pt-2">
+            <div class="flex items-center justify-between">
+            <span class="font-label-caps text-label-caps uppercase tracking-wider font-bold text-on-surface">Gustoća / Thread Count</span>
+            <span class="font-label-specs text-label-specs text-secondary">g/m² & TC</span>
+            </div>
+            <div class="grid grid-cols-2 gap-2 font-label-specs text-label-specs">
+            <label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer"><input checked class="accent-primary" type="checkbox"><span class="">TC 200 - 250</span></label>
+            <label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer"><input checked class="accent-primary" type="checkbox"><span class="">TC 300 - 400</span></label>
+            <label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer"><input class="accent-primary" type="checkbox"><span class="">450 - 500 g/m²</span></label>
+            <label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer"><input checked class="accent-primary" type="checkbox"><span class="">550 - 650 g/m²</span></label>
+            </div>
+          </div>
+          <!-- Certification -->
+          <div class="flex flex-col gap-space-xs pt-2">
+            <span class="font-label-caps text-label-caps uppercase tracking-wider font-bold text-on-surface">Ispitni Standardi & Pranje</span>
+            <div class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant">
+            <label class="flex items-center gap-2 cursor-pointer"><input checked class="accent-primary" type="checkbox"><span class="text-on-surface">Pranje 95°C (Klor-otporno / Bjeljenje)</span></label>
+            <label class="flex items-center gap-2 cursor-pointer"><input checked class="accent-primary" type="checkbox"><span class="text-on-surface">Sanforizirano (Skupljanje &lt;3.5%)</span></label>
+            <label class="flex items-center gap-2 cursor-pointer"><input checked class="accent-primary" type="checkbox"><span class="text-on-surface">OEKO-TEX® Standard 100 Class I</span></label>
+            <label class="flex items-center gap-2 cursor-pointer"><input class="accent-primary" type="checkbox"><span class="text-on-surface">Negorivost EN 13773 / DIN 4102-B1</span></label>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- RIGHT MAIN CONTENT: Grid -->
+      <div class="lg:col-span-9 flex flex-col gap-space-lg">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm p-space-sm rounded-xl bg-surface-container-lowest shadow-sm">
+          <div class="flex items-center gap-space-xs flex-wrap"><span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Prikazano artikala:</span><span class="font-headline-sm text-headline-sm font-bold text-on-surface">8 odabranih specifikacija</span><span class="font-label-specs text-label-specs text-on-surface-variant px-2 py-0.5 rounded bg-surface-container">Za hotele 4★ i 5★</span></div>
+          <div class="flex items-center gap-space-sm w-full sm:w-auto justify-between sm:justify-end">
+          <div class="flex items-center gap-2 font-label-specs text-label-specs text-on-surface-variant">
+          <span class="">Sortiranje:</span>
+          <select class="px-2.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm focus:outline-none">
+          <option>Preporučeno za luksuzne resorte</option>
+          <option>Najviša gramatura (g/m²)</option>
+          <option>Klasik za boutique hotele</option>
+          <option>Standardni apartmanski paket</option>
+          </select>
+          </div>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter transition-all">
+          
+          <!-- ITEM 1 -->
+          <article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+            <div class="relative h-64 w-full overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_W33ghOuoujmVECy1i2Wzi8TSV4z0AigJxCWTRMOpY5trZIM7pLQ2CAjTwSWh3FjrGI4j4uI6LOkTQv6Q_26La1FxkICsf4gdmV53j4Wj5aj9w036AxYwjhHGuSKaXDOfJJME0IH1hylQGQw_nQtFfPkenKxKK9gMK6tJBi2jrdIhl2squH2Xjp9tpW7fIxK7Mqur1tmTy34BVFD8IPMOvUDKGicd_hh20UoCNYn--ffdo-XbhxJ4Tw">
+              <div class="absolute top-3 left-3 flex flex-wrap gap-1.5"><span class="px-2 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-sm font-label-specs text-label-specs font-semibold text-primary">SKU: RTP-SAT-201</span><span class="px-2 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase font-bold">Top Hotelski Izbor</span></div>
+              <div class="absolute top-3 right-3 p-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm shadow-sm"><span class="material-symbols-outlined text-[18px] text-secondary">workspace_premium</span></div>
+            </div>
+            <div class="p-space-md flex flex-col flex-grow justify-between gap-space-sm">
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center justify-between"><span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Posteljni Program • Damast</span><span class="font-label-specs text-label-specs text-on-surface-variant font-medium">TC 400 • 145 g/m²</span></div>
+                <h2 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-secondary transition-colors">Hotelska Saten Posteljina – Royal Damast 4mm pruga</h2>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">100% egipatski češljani mako-saten, svilenkastog sjaja i dugih vlakana. Tkana u elegantnoj 4mm damast pruzi sa hotelskim preklopom za brzo presvlačenje.</p>
+                <div class="flex flex-wrap gap-1 pt-1 font-label-specs text-label-specs">
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">100% Češljani Pamuk</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">95°C Klor-otporno</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-secondary font-medium">Veleprodaja & Savjetovanje</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">Sanforizirano (&lt;3%)</span>
+                </div>
+                <div class="pt-2 flex flex-col gap-1">
+                  <span class="font-label-specs text-label-specs uppercase text-on-surface-variant">Dostupne dimenzije:</span>
+                  <div class="flex flex-wrap gap-1.5 font-label-specs text-label-specs text-on-surface">
+                    <span class="px-2 py-0.5 bg-surface-container rounded">140x200 / 60x80</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">200x200 / 2x 60x80</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">240x260 (Plahta)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs">
+                <button class="flex-grow inline-flex items-center justify-center gap-2 py-2.5 px-space-sm rounded-lg bg-primary-container hover:bg-on-tertiary-fixed text-on-primary font-headline-sm text-body-sm font-semibold transition-colors shadow-sm" onclick="addToQuote('RTP-SAT-201', 'Hotelska Saten Posteljina - Royal Damast')" type="button"><span class="material-symbols-outlined text-[18px]">add_shopping_cart</span><span class="whitespace-nowrap">Dodaj u Upit</span></button>
+                <button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Preuzmi tehnički list"><span class="material-symbols-outlined text-[20px]">description</span></button>
+              </div>
+            </div>
+          </article>
+          
+          <!-- ITEM 2 -->
+          <article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+            <div class="relative h-64 w-full overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJVklz81dGASkzhC0elXov84HLBWkHm-qTxETpQbiMz4RlXGkyvbpo-07yphjIZKB4P3Hbmwav-QgN10pNtZHW0T0CvKLP2_hOTlJ0qMVIyeS5IumbuNovLdbwR7MEZFsWjiYPhurXMnkQPbBMXc7JtLDV9cUiPaIVlat62bx2zcBXY5Lmv0xVL76qLXswJkpSmB7vbZj_ncL6gUGv4MaptdxQ5Ve-th_IEpkxfEatozPSA-H-Db8PDg">
+              <div class="absolute top-3 left-3 flex flex-wrap gap-1.5"><span class="px-2 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-sm font-label-specs text-label-specs font-semibold text-primary">SKU: RTP-TOW-550</span><span class="px-2 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps uppercase font-bold">Teški Spa Standard</span></div>
+              <div class="absolute top-3 right-3 p-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm shadow-sm"><span class="material-symbols-outlined text-[18px] text-secondary">water_drop</span></div>
+            </div>
+            <div class="p-space-md flex flex-col flex-grow justify-between gap-space-sm">
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center justify-between"><span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Kupaonski Frotir • Ručnici</span><span class="font-label-specs text-label-specs text-on-surface-variant font-medium">550 g/m² • Ring Spun</span></div>
+                <h2 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-secondary transition-colors">Hotelski Ručnik Comfort 550g/m² – Dvostruka Omča</h2>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Dizajniran za preko 250 ciklusa industrijskog pranja. Dvostruko prošiveni uzdužni rubovi sprječavaju paranje, a gusto tkanje jamči maksimalnu moć upijanja.</p>
+                <div class="flex flex-wrap gap-1 pt-1 font-label-specs text-label-specs">
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">100% Egejski Pamuk</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">95°C Perivo</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-secondary font-medium">Veleprodaja & Savjetovanje</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">Dvostruki rub</span>
+                </div>
+                <div class="pt-2 flex flex-col gap-1">
+                  <span class="font-label-specs text-label-specs uppercase text-on-surface-variant">Dostupne dimenzije:</span>
+                  <div class="flex flex-wrap gap-1.5 font-label-specs text-label-specs text-on-surface">
+                    <span class="px-2 py-0.5 bg-surface-container rounded">30x50 cm (Gost)</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">50x100 cm (Lice)</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">70x140 cm (Kupka)</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">100x150 cm (Maxi)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs">
+                <button class="flex-grow inline-flex items-center justify-center gap-2 py-2.5 px-space-sm rounded-lg bg-primary-container hover:bg-on-tertiary-fixed text-on-primary font-headline-sm text-body-sm font-semibold transition-colors shadow-sm" onclick="addToQuote('RTP-TOW-550', 'Hotelski Ručnik Comfort 550g/m²')" type="button"><span class="material-symbols-outlined text-[18px]">add_shopping_cart</span><span class="whitespace-nowrap">Dodaj u Upit</span></button>
+                <button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Preuzmi tehnički list"><span class="material-symbols-outlined text-[20px]">description</span></button>
+              </div>
+            </div>
+          </article>
+          
+          <!-- ITEM 3 -->
+          <article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+            <div class="relative h-64 w-full overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_EDeHgvtWIkmDHHJEeIaMWut2MCTvzZCDyYZrUwOu52bRlT-fd22qxRWDt28Iq16v8_3HXQEPuspXQnuDSyjHAnW5vxJQ5uYU15D1jF8IC5WgGuKijyQJdCThwnzaBsqFjtbo3jCBo5ezS1idqjBHRa44BcoBDM4eTjRmuO1o2lBRFQqC0zGE3UV05AKBdZ2D4ZUO7rsbHw6yJ6AI1GY7bQ2HNkjzAF8qllXuXypDwi_Y6viJfxqX0Q">
+              <div class="absolute top-3 left-3 flex flex-wrap gap-1.5"><span class="px-2 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-sm font-label-specs text-label-specs font-semibold text-primary">SKU: RTP-PIL-700</span><span class="px-2 py-1 rounded bg-surface-container-highest text-on-surface font-label-caps text-label-caps uppercase font-bold">Hipoalergeno</span></div>
+            </div>
+            <div class="p-space-md flex flex-col flex-grow justify-between gap-space-sm">
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center justify-between"><span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Punjeni Program • Jastuci</span><span class="font-label-specs text-label-specs text-on-surface-variant font-medium">850g Punilo • Mikrofibra kuglice</span></div>
+                <h2 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-secondary transition-colors">Antialergijski Jastuk Classic Hotel 50x70 cm</h2>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Punjen elastičnim silikoniziranim PES kuglicama koje ne gube volumen nakon dugotrajnog spavanja i pranja. Navlaka sa zatvaračem omogućuje podešavanje visine.</p>
+                <div class="flex flex-wrap gap-1 pt-1 font-label-specs text-label-specs">
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">Pamuk / Mikrofibra</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">60°C Pranje</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-secondary font-medium">Veleprodaja & Savjetovanje</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">Zatvarač za dopunu</span>
+                </div>
+                <div class="pt-2 flex flex-col gap-1">
+                  <span class="font-label-specs text-label-specs uppercase text-on-surface-variant">Standardne veličine:</span>
+                  <div class="flex flex-wrap gap-1.5 font-label-specs text-label-specs text-on-surface">
+                    <span class="px-2 py-0.5 bg-surface-container rounded">50x70 cm (Hotel Standard)</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">60x80 cm (Euro Standard)</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">40x40 cm (Dekorativni)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs">
+                <button class="flex-grow inline-flex items-center justify-center gap-2 py-2.5 px-space-sm rounded-lg bg-primary-container hover:bg-on-tertiary-fixed text-on-primary font-headline-sm text-body-sm font-semibold transition-colors shadow-sm" onclick="addToQuote('RTP-PIL-700', 'Antialergijski Jastuk Classic Hotel 50x70')" type="button"><span class="material-symbols-outlined text-[18px]">add_shopping_cart</span><span class="whitespace-nowrap">Dodaj u Upit</span></button>
+                <button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Preuzmi tehnički list"><span class="material-symbols-outlined text-[20px]">description</span></button>
+              </div>
+            </div>
+          </article>
+          
+          <!-- ITEM 4 -->
+          <article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+            <div class="relative h-64 w-full overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKNfLxUb45AOsqHtOtJDcEU0WsXi3eftIjy3bif_SIhImRVY_k7WJoPhLS1huFOPFEWRaiX4Si__POWFNosNVP-9RH91ke-GBvbWn_D_dqsy31RazWhczbp-SUPG9-rWYce7ELjkbfdKklyEw5PrwWDGW9V5DVSzbH3WXHhOMSxvPl6F6fFCROkKof1GNCOnnMd3xicZLr7SqcTRsxUbvyoHYgkq3Os5pU-4BKILmfd1R_UHm30sUv1g">
+              <div class="absolute top-3 left-3 flex flex-wrap gap-1.5"><span class="px-2 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-sm font-label-specs text-label-specs font-semibold text-primary">SKU: RTP-BOX-IMP</span><span class="px-2 py-1 rounded bg-secondary-fixed-dim text-on-secondary-fixed font-label-caps text-label-caps uppercase font-bold">Ugovorno Opremanje</span></div>
+            </div>
+            <div class="p-space-md flex flex-col flex-grow justify-between gap-space-sm">
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center justify-between"><span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Hotelski Kreveti • Boxspring</span><span class="font-label-specs text-label-specs text-on-surface-variant font-medium">Džepičasta jezgra • Masiv</span></div>
+                <h2 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-secondary transition-colors">Boxspring Hotelski Krevet Imperial 5★</h2>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Konstrukcija od sušene masivne borovine s ugrađenom džepičastom opružnom bazom za produženi vijek madraca. Negorivi tapecirung sa sustavom spajanja u bračni ležaj.</p>
+                <div class="flex flex-wrap gap-1 pt-1 font-label-specs text-label-specs">
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">Negoriva tkanina FR</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">Masivna jezgra</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-secondary font-medium">Veleprodaja & Savjetovanje</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">Garancija 7 god</span>
+                </div>
+                <div class="pt-2 flex flex-col gap-1">
+                  <span class="font-label-specs text-label-specs uppercase text-on-surface-variant">Konfiguracije kreveta:</span>
+                  <div class="flex flex-wrap gap-1.5 font-label-specs text-label-specs text-on-surface">
+                    <span class="px-2 py-0.5 bg-surface-container rounded">90x200 / 100x200 (Twin)</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">160x200 / 180x200 (King)</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">200x200 cm (Super King)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs">
+                <button class="flex-grow inline-flex items-center justify-center gap-2 py-2.5 px-space-sm rounded-lg bg-primary-container hover:bg-on-tertiary-fixed text-on-primary font-headline-sm text-body-sm font-semibold transition-colors shadow-sm" onclick="addToQuote('RTP-BOX-IMP', 'Boxspring Hotelski Krevet Imperial')" type="button"><span class="material-symbols-outlined text-[18px]">add_shopping_cart</span><span class="whitespace-nowrap">Dodaj u Upit</span></button>
+                <button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Preuzmi tehnički list"><span class="material-symbols-outlined text-[20px]">description</span></button>
+              </div>
+            </div>
+          </article>
+          
+          <!-- ITEM 5 -->
+          <article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+            <div class="relative h-64 w-full overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0-VITiP9boSkm79HchgzwdU0MtfUSpHP8WHhXXu4D687b0u4DBLocHIXINdgfVeSrUWkaLcEVQianvpI3D1dW5TX4xl9YNcy7SsKnca7CoU1In1_dhwp7-IBNYmfj2oAH_cO2w_JVmsXBxzXYRX6wZhzW_iCAMef5PZq4J9lM3RNtHX3-Q5dqbWZedJL3G0B5ZDHhAbmV4Mq949Cc29I1S7YCwepA2Uqoe5OuLQqgQ-OxqKWmkX_OPA">
+              <div class="absolute top-3 left-3 flex flex-wrap gap-1.5"><span class="px-2 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-sm font-label-specs text-label-specs font-semibold text-primary">SKU: RTP-PRO-PU95</span><span class="px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-caps text-label-caps uppercase font-bold">100% Barrier</span></div>
+            </div>
+            <div class="p-space-md flex flex-col flex-grow justify-between gap-space-sm">
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center justify-between"><span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Zaštitni Program • Madraci</span><span class="font-label-specs text-label-specs text-on-surface-variant font-medium">190 g/m² • PU Membrana</span></div>
+                <h2 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-secondary transition-colors">Vodonepropusna PU Navlaka za Madrac – Periva 95°C</h2>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Potpuna barijera protiv tekućina, alergena i grinja bez neugodnog šuškanja. Paropropusna poliuretanska membrana koja diše i štiti madrac od amortizacije.</p>
+                <div class="flex flex-wrap gap-1 pt-1 font-label-specs text-label-specs">
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">100% Vodootporno</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">Autoklav i 95°C</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-secondary font-medium">Veleprodaja & Savjetovanje</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">Visina do 32 cm</span>
+                </div>
+                <div class="pt-2 flex flex-col gap-1">
+                  <span class="font-label-specs text-label-specs uppercase text-on-surface-variant">Dostupne dimenzije:</span>
+                  <div class="flex flex-wrap gap-1.5 font-label-specs text-label-specs text-on-surface">
+                    <span class="px-2 py-0.5 bg-surface-container rounded">90x200 cm</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">160x200 cm</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">180x200 cm</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">200x200 cm</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs">
+                <button class="flex-grow inline-flex items-center justify-center gap-2 py-2.5 px-space-sm rounded-lg bg-primary-container hover:bg-on-tertiary-fixed text-on-primary font-headline-sm text-body-sm font-semibold transition-colors shadow-sm" onclick="addToQuote('RTP-PRO-PU95', 'Vodonepropusna PU Navlaka za madrac')" type="button"><span class="material-symbols-outlined text-[18px]">add_shopping_cart</span><span class="whitespace-nowrap">Dodaj u Upit</span></button>
+                <button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Preuzmi tehnički list"><span class="material-symbols-outlined text-[20px]">description</span></button>
+              </div>
+            </div>
+          </article>
+          
+          <!-- ITEM 6 -->
+          <article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+            <div class="relative h-64 w-full overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe8Q4ddJsfTEA4qp6hQTYhnzroKiOImerZzNHUPemGzjdW9OoW37x1tfr-ZDrkoUEO7Vh9DR59ifQYJjvSVCAwr4pYXUJpjD9Rjpmv1Kk9T49pR4uQ8TAOrpBUSv1-O5sybF97xdrMfMdm-DjiAW6zjGFKvf3TnQ_G-WgZhw9SGNesXOxvpKhPWLanhrSgUMG1eju5ttQLpM1Vb9UVnJeZhll7eUXu-511N_-HxwnPXk-lZT6ayVXGVQ">
+              <div class="absolute top-3 left-3 flex flex-wrap gap-1.5"><span class="px-2 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-sm font-label-specs text-label-specs font-semibold text-primary">SKU: RTP-CUR-FR32</span><span class="px-2 py-1 rounded bg-primary text-on-primary font-label-caps text-label-caps uppercase font-bold">FR Certifikat</span></div>
+            </div>
+            <div class="p-space-md flex flex-col flex-grow justify-between gap-space-sm">
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center justify-between"><span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Zavjese & Dekori • Dimout</span><span class="font-label-specs text-label-specs text-on-surface-variant font-medium">280 g/m² • Širina 300cm</span></div>
+                <h2 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-secondary transition-colors">Dimout Negoriva Hotelska Zavjesa FR (99% Zatamnjenje)</h2>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Tkana s crnim jezgrenim vlaknom za 99% blokiranje jutarnje svjetlosti. Trajno negoriva svojstva ugrađena u strukturu pređe (Trevira CS standard).</p>
+                <div class="flex flex-wrap gap-1 pt-1 font-label-specs text-label-specs">
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">DIN 4102 B1 Certifikat</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">Zvučna izolacija -12dB</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-secondary font-medium">Veleprodaja & Savjetovanje</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">UV otpornost</span>
+                </div>
+                <div class="pt-2 flex flex-col gap-1">
+                  <span class="font-label-specs text-label-specs uppercase text-on-surface-variant">Širina i dorada:</span>
+                  <div class="flex flex-wrap gap-1.5 font-label-specs text-label-specs text-on-surface">
+                    <span class="px-2 py-0.5 bg-surface-container rounded">Bale širine 300 cm</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">Konfekcionirano na valne nabore</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">18 Tonaliteta</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs">
+                <button class="flex-grow inline-flex items-center justify-center gap-2 py-2.5 px-space-sm rounded-lg bg-primary-container hover:bg-on-tertiary-fixed text-on-primary font-headline-sm text-body-sm font-semibold transition-colors shadow-sm" onclick="addToQuote('RTP-CUR-FR32', 'Dimout Negoriva Hotelska Zavjesa FR')" type="button"><span class="material-symbols-outlined text-[18px]">add_shopping_cart</span><span class="whitespace-nowrap">Dodaj u Upit</span></button>
+                <button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Preuzmi tehnički list"><span class="material-symbols-outlined text-[20px]">description</span></button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ITEM 7 -->
+          <article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+            <div class="relative h-64 w-full overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChZ64qBqijucWpsUgd77f1dYhTP8CpvKa_ID0-Kl_4obPdK0xpSSVtJ1VwKe1mcjH0YEpKtI_mgDgrEMJOwyhIZTgrkx7cKlf9kSUaaNxn57Zt3QtJVTHkag0tBI8Rx7fGbeqhmmZHxBxKLUW5wRoxV6spU2C5CLCxtH048uskX6ZMW0ob-hH-t9WnyyhkjoTzf5bceUHM7-3NeKN2D48DGkJCtqu0H88jesC20MUnIxJs60n_cLAswQ">
+              <div class="absolute top-3 left-3 flex flex-wrap gap-1.5"><span class="px-2 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-sm font-label-specs text-label-specs font-semibold text-primary">SKU: RTP-ROB-450</span><span class="px-2 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase font-bold">Wellness & Spa</span></div>
+            </div>
+            <div class="p-space-md flex flex-col flex-grow justify-between gap-space-sm">
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center justify-between"><span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Kupaonski Ogrtači • Kimono / Šal</span><span class="font-label-specs text-label-specs text-on-surface-variant font-medium">450 g/m² • Velur / Frotir</span></div>
+                <h2 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-secondary transition-colors">Hotelski Ogrtač Velour Imperial – Šal Ovratnik</h2>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Izvana baršunasto meki velur s elegantnim mat sjajem, iznutra upijajući frotir. Pojačani džepovi i dvostruke petlje za pojas za jednostavno prilagođavanje.</p>
+                <div class="flex flex-wrap gap-1 pt-1 font-label-specs text-label-specs">
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">100% Češljani Pamuk</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">60°C - 95°C Perivo</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-secondary font-medium">Veleprodaja & Savjetovanje</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">Antistatik dorada</span>
+                </div>
+                <div class="pt-2 flex flex-col gap-1">
+                  <span class="font-label-specs text-label-specs uppercase text-on-surface-variant">Dostupne veličine:</span>
+                  <div class="flex flex-wrap gap-1.5 font-label-specs text-label-specs text-on-surface">
+                    <span class="px-2 py-0.5 bg-surface-container rounded">M (Unisex)</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">L (Standard)</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">XL (Komfor)</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">XXL (Maxi)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs">
+                <button class="flex-grow inline-flex items-center justify-center gap-2 py-2.5 px-space-sm rounded-lg bg-primary-container hover:bg-on-tertiary-fixed text-on-primary font-headline-sm text-body-sm font-semibold transition-colors shadow-sm" onclick="addToQuote('RTP-ROB-450', 'Hotelski Ogrtač Velour Imperial')" type="button"><span class="material-symbols-outlined text-[18px]">add_shopping_cart</span><span class="whitespace-nowrap">Dodaj u Upit</span></button>
+                <button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Preuzmi tehnički list"><span class="material-symbols-outlined text-[20px]">description</span></button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ITEM 8 -->
+          <article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+            <div class="relative h-64 w-full overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhxHCDajnOMEkd5OV9i59pTFPkPiBrvWS8-N8vnj-yvJAhY-h6LEH8BERXBfzQQK-XmNdO-VjFe0Q7bgt5LXxrFul1qjVXCw0NZy2NatOCXTDmcH0MS0x-HkQSkdtyxrd4ThGylMBoLaSrRPZzA5vYHMAC01apKKJPdFvmMFgg15TKqRBR-cm7mtVjOOoUcJ0wUvC3zgatBTbP9UhA-X8CDCHoomjnFNGudrvtYaXHCyH143A1sJrjeA">
+              <div class="absolute top-3 left-3 flex flex-wrap gap-1.5"><span class="px-2 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-sm font-label-specs text-label-specs font-semibold text-primary">SKU: RTP-TBL-240</span><span class="px-2 py-1 rounded bg-surface-container-highest text-on-surface font-label-caps text-label-caps uppercase font-bold">Gastro & Event</span></div>
+            </div>
+            <div class="p-space-md flex flex-col flex-grow justify-between gap-space-sm">
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center justify-between"><span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Stolni Program • Restorani</span><span class="font-label-specs text-label-specs text-on-surface-variant font-medium">240 g/m² • Mako Damast</span></div>
+                <h2 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-secondary transition-colors">Banketni Stolnjak Damast Gastro – Teflon Zaštita</h2>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Čvrsto mercerizirano platno s ugrađenom diskretnom hidrofobnom zaštitom protiv upijanja mrlja od vina i ulja. Podnosi visoke temperature valjka.</p>
+                <div class="flex flex-wrap gap-1 pt-1 font-label-specs text-label-specs">
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">100% Dvostruko Mercerizirano</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">95°C Otporno</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-secondary font-medium">Veleprodaja & Savjetovanje</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface">Kosi kutni porub</span>
+                </div>
+                <div class="pt-2 flex flex-col gap-1">
+                  <span class="font-label-specs text-label-specs uppercase text-on-surface-variant">Dimenzije stolnjaka:</span>
+                  <div class="flex flex-wrap gap-1.5 font-label-specs text-label-specs text-on-surface">
+                    <span class="px-2 py-0.5 bg-surface-container rounded">140x180 cm</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">160x220 cm</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">Ø 280 cm (Okrugli)</span>
+                    <span class="px-2 py-0.5 bg-surface-container rounded">50x50 cm (Ubrusi)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs">
+                <button class="flex-grow inline-flex items-center justify-center gap-2 py-2.5 px-space-sm rounded-lg bg-primary-container hover:bg-on-tertiary-fixed text-on-primary font-headline-sm text-body-sm font-semibold transition-colors shadow-sm" onclick="addToQuote('RTP-TBL-240', 'Banketni Stolnjak Damast Gastro')" type="button"><span class="material-symbols-outlined text-[18px]">add_shopping_cart</span><span class="whitespace-nowrap">Dodaj u Upit</span></button>
+                <button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Preuzmi tehnički list"><span class="material-symbols-outlined text-[20px]">description</span></button>
+              </div>
+            </div>
+          </article>
+          
+        </div>
+        
+        <!-- Pagination -->
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm p-space-md rounded-xl bg-surface-container-low mt-4">
+          <div class="font-label-specs text-label-specs text-on-surface-variant">Prikaz 1 – 8 od ukupno 54 industrijska hotelska artikla</div>
+          <div class="flex items-center gap-1">
+            <button class="w-9 h-9 rounded-lg bg-primary-container text-on-primary font-label-specs text-label-specs font-semibold flex items-center justify-center" type="button">1</button>
+            <button class="w-9 h-9 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-specs text-label-specs flex items-center justify-center" type="button">2</button>
+            <button class="w-9 h-9 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-specs text-label-specs flex items-center justify-center" type="button">3</button>
+            <button class="w-9 h-9 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-specs text-label-specs flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[16px]">chevron_right</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOLUME DISCOUNT & B2B CUSTOMIZATION TIERS (EDITORIAL MATRIX) -->
+  <section class="w-full bg-surface-container py-space-xl px-margin md:px-margin-tablet lg:px-margin-desktop fade-in-section">
+    <div class="max-w-[1440px] mx-auto flex flex-col gap-space-lg">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+        <div class="flex flex-col gap-space-xs">
+          <span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest font-bold">Komercijalni Uvjeti Za Pravne Osobe</span>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Količinski Rabati & Dorada po Mjeri</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Kao direktni uvoznik i proizvodni doradni centar za tekstil, garantiramo stabilnost cijena kroz ugovorene prednarudžbe i transparentnu ljestvicu količinskih popusta.</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface-container-lowest font-label-specs text-label-specs text-on-surface shadow-sm">
+            <span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+            <span class="">R1 Račun • Obrnuto Oporezivanje (EU)</span>
+          </span>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+        <!-- Tier 1 -->
+        <div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md">
+          <div class="flex flex-col gap-space-xs">
+            <div class="flex items-center justify-between"><span class="font-label-caps text-label-caps uppercase text-secondary font-bold">Tier 01 • Boutique & Vile</span><span class="px-2 py-0.5 rounded bg-surface-container font-label-specs text-label-specs text-on-surface">od 20 kom</span></div>
+            <div class="flex items-baseline gap-1 my-1"><span class="font-headline-lg text-headline-lg font-bold text-on-surface">5% – 10%</span><span class="font-label-specs text-label-specs text-on-surface-variant">popusta</span></div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Idealno za luksuzne kuće za odmor i manje boutique hotele sa do 12 smještajnih jedinica.</p>
+            <ul class="flex flex-col gap-2 pt-space-xs font-body-sm text-body-sm text-on-surface">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span class="">Mogućnost kombiniranja dimenzija u seriji</span></li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span class="">Ekspresna isporuka sa skladišta (48h)</span></li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span class="">Besplatan Swatch Box uzoraka tkanina</span></li>
+            </ul>
+          </div>
+          <button class="w-full py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-headline-sm text-body-sm font-semibold transition-colors" onclick="quickApplyTier('Tier 01 (od 20 kom)')" type="button">Odaberi ovaj paket za ponudu</button>
+        </div>
+        <!-- Tier 2 -->
+        <div class="p-space-lg rounded-xl bg-primary-container text-on-primary shadow-md flex flex-col justify-between gap-space-md relative overflow-hidden">
+          <div class="absolute top-0 right-0 transform translate-x-4 -translate-y-2 bg-secondary text-surface px-6 py-1 font-label-caps text-label-caps uppercase rotate-12 font-bold shadow-sm">Najčešći Izbor</div>
+          <div class="flex flex-col gap-space-xs">
+            <div class="flex items-center justify-between"><span class="font-label-caps text-label-caps uppercase text-secondary-fixed-dim font-bold">Tier 02 • Hoteli & Resorti</span><span class="px-2 py-0.5 rounded bg-on-tertiary-fixed font-label-specs text-label-specs text-tertiary-fixed">od 50 kom</span></div>
+            <div class="flex items-baseline gap-1 my-1"><span class="font-headline-lg text-headline-lg font-bold text-on-primary">15% – 20%</span><span class="font-label-specs text-label-specs text-on-primary-container">popusta</span></div>
+            <p class="font-body-sm text-body-sm text-on-primary-fixed-variant">Dizajnirano za hotele s 20 do 60 soba koji obnavljaju posteljni i kupaonski fundus za novu sezonu.</p>
+            <ul class="flex flex-col gap-2 pt-space-xs font-body-sm text-body-sm text-on-primary">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary-fixed">check_circle</span><span class=""><strong>Gratis strojno vezenje</strong> (monogram) do 50 kom</span></li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary-fixed">check_circle</span><span class="">Fiksiranje cijena ugovorene kvote na 12 mjeseci</span></li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary-fixed">check_circle</span><span class="">Besplatna paletna dostava na lokaciju objekta</span></li>
+            </ul>
+          </div>
+          <button class="w-full py-2.5 rounded-lg bg-surface text-primary hover:bg-secondary-fixed transition-colors font-headline-sm text-body-sm font-semibold shadow-sm" onclick="quickApplyTier('Tier 02 (od 50 kom)')" type="button">Zatražite kalkulaciju za 50+ kom</button>
+        </div>
+        <!-- Tier 3 -->
+        <div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md">
+          <div class="flex flex-col gap-space-xs">
+            <div class="flex items-center justify-between"><span class="font-label-caps text-label-caps uppercase text-secondary font-bold">Tier 03 • Grupacije & Projekti</span><span class="px-2 py-0.5 rounded bg-surface-container font-label-specs text-label-specs text-on-surface">od 100+ kom</span></div>
+            <div class="flex items-baseline gap-1 my-1"><span class="font-headline-lg text-headline-lg font-bold text-on-surface">Individualni</span><span class="font-label-specs text-label-specs text-on-surface-variant">Ugovorni Rabat</span></div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Za hotelske lance, novogradnje, arhitektonske projekte i generalno opremanje većih kapaciteta.</p>
+            <ul class="flex flex-col gap-2 pt-space-xs font-body-sm text-body-sm text-on-surface">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span class="">Tkana žakar personalizacija s vašim logotipom</span></li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span class="">Proizvodnja po unikatnim vanstandardnim dimenzijama</span></li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span class="">Osobni voditelj ključnih kupaca & tehnički konzalting</span></li>
+            </ul>
+          </div>
+          <button class="w-full py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-headline-sm text-body-sm font-semibold transition-colors" onclick="quickApplyTier('Tier 03 (100+ kom)')" type="button">Ugovorite sastanak s Key Accountom</button>
+        </div>
+      </div>
+      <!-- Embroidery Banner -->
+      <div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+        <div class="lg:col-span-8 flex flex-col gap-space-xs">
+          <div class="flex items-center gap-2"><span class="material-symbols-outlined text-[22px] text-secondary">draw</span><h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Vlastiti Pogon za Strojno Vezenje i Šivanje po Mjeri</h3></div>
+          <p class="font-body-md text-body-md text-on-surface-variant">U našem doradnom atelieru na Kukuljanovu raspolažemo industrijskim Tajima vezilicama s 12 boja. Vežemo grbove, hotelske logotipe i monograme na ručnike, ogrtače, posteljinu i jastučnice koncem otpornim na klor i temperature pranja do 95°C.</p>
+        </div>
+        <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-xs justify-end">
+          <div class="flex items-center gap-3 p-space-xs px-space-sm bg-surface-container rounded-lg"><span class="material-symbols-outlined text-secondary">palette</span><div class="flex flex-col"><span class="font-label-specs text-label-specs text-on-surface font-semibold">Preko 120 nijansi konca</span><span class="font-label-specs text-label-specs text-on-surface-variant">Madeira Polyneon (Klor-Safe)</span></div></div>
+          <div class="flex items-center gap-3 p-space-xs px-space-sm bg-surface-container rounded-lg"><span class="material-symbols-outlined text-secondary">schedule</span><div class="flex flex-col"><span class="font-label-specs text-label-specs text-on-surface font-semibold">Kapacitet: 1.200 kom/tjedan</span><span class="font-label-specs text-label-specs text-on-surface-variant">Brza isporuka prije sezone</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ========================================== -->
+<!-- VIEW 3: KONTAKT                            -->
+<!-- ========================================== -->
+<div id="kontakt" class="page-view hidden">
+  <section class="w-full py-space-xl bg-surface fade-in-section">
+    <div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-8">
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2 mb-space-xs bg-surface-container-highest px-3 py-1 rounded-full text-secondary font-label-caps text-label-caps tracking-widest uppercase"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Direktan Kontakt & Savjetovanje</div>
+          <h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mb-space-xs">Zatražite ponudu ili dogovorite prezentaciju uzoraka</h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Ispunite kratki obrazac s vašim potrebama, a naš prodajni tim pripremit će personaliziranu ponudu s količinskim rabatima unutar 24 radna sata.</p>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+        <!-- FORM COLUMN -->
+        <div class="lg:col-span-7 bg-surface-container-lowest p-space-md lg:p-space-lg rounded-lg shadow-sm border border-surface-variant">
+          <div class="flex items-center justify-between pb-space-sm mb-space-md bg-surface-container-low -mx-space-md -mt-space-md lg:-mx-space-lg lg:-mt-space-lg p-space-md rounded-t-lg">
+            <div><span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider block">Konfigurator Zahtjeva</span><h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Obrazac za Ponudu & Uzorke</h2></div>
+          </div>
+          <form class="flex flex-col gap-space-lg" id="b2b-rfq-form" onsubmit="handleInquirySubmit(event)">
+            <div>
+              <div class="flex items-center gap-2 mb-space-sm"><span class="w-6 h-6 rounded bg-primary-container text-on-primary flex items-center justify-center font-label-specs text-label-specs font-semibold">1</span><h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">Podaci o naručitelju i objektu</h3></div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+                <div><label class="block font-label-specs text-label-specs text-on-surface-variant uppercase mb-1">Tvrtka / Naziv Objekta *</label><input class="w-full h-11 px-4 rounded bg-surface-container-low border border-outline-variant/30 text-on-surface placeholder:text-outline font-body-md focus:bg-surface-container-lowest focus:outline-none focus:border-primary transition-all" placeholder="npr. Adria Luxury Hotels d.o.o." required type="text"></div>
+                <div><label class="block font-label-specs text-label-specs text-on-surface-variant uppercase mb-1">Grad i Lokacija Objekta *</label><input class="w-full h-11 px-4 rounded bg-surface-container-low border border-outline-variant/30 text-on-surface placeholder:text-outline font-body-md focus:bg-surface-container-lowest focus:outline-none focus:border-primary transition-all" placeholder="npr. Rovinj, Istra" required type="text"></div>
+                <div><label class="block font-label-specs text-label-specs text-on-surface-variant uppercase mb-1">Službeni E-mail *</label><input class="w-full h-11 px-4 rounded bg-surface-container-low border border-outline-variant/30 text-on-surface placeholder:text-outline font-body-md focus:bg-surface-container-lowest focus:outline-none focus:border-primary transition-all" placeholder="nabava@hotel-resort.hr" required type="email"></div>
+                <div><label class="block font-label-specs text-label-specs text-on-surface-variant uppercase mb-1">Broj telefona / mobitela *</label><input class="w-full h-11 px-4 rounded bg-surface-container-low border border-outline-variant/30 text-on-surface placeholder:text-outline font-label-specs focus:bg-surface-container-lowest focus:outline-none focus:border-primary transition-all" placeholder="+385 9X XXX XXXX" required type="tel"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center gap-2 mb-space-xs"><span class="w-6 h-6 rounded bg-primary-container text-on-primary flex items-center justify-center font-label-specs text-label-specs font-semibold">2</span><h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">Traženi asortiman</h3></div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs">
+                <label class="flex items-start gap-3 p-3 rounded bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer"><input checked class="mt-1 text-secondary focus:ring-secondary" name="range" type="checkbox" value="bedding"><div><span class="block font-headline-sm text-body-md font-semibold text-on-surface">Hotelska posteljina</span><span class="block font-body-sm text-body-sm text-on-surface-variant">Saten 300-500 TC, TC200 Percale</span></div></label>
+                <label class="flex items-start gap-3 p-3 rounded bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer"><input checked class="mt-1 text-secondary focus:ring-secondary" name="range" type="checkbox" value="towels"><div><span class="block font-headline-sm text-body-md font-semibold text-on-surface">Ručnici i kupaonski program</span><span class="block font-body-sm text-body-sm text-on-surface-variant">450-650 g/m² frotir</span></div></label>
+                <label class="flex items-start gap-3 p-3 rounded bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer"><input class="mt-1 text-secondary focus:ring-secondary" name="range" type="checkbox" value="pillows"><div><span class="block font-headline-sm text-body-md font-semibold text-on-surface">Jastuci i popluni</span></div></label>
+                <label class="flex items-start gap-3 p-3 rounded bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer"><input class="mt-1 text-secondary focus:ring-secondary" name="range" type="checkbox" value="covers"><div><span class="block font-headline-sm text-body-md font-semibold text-on-surface">Madraci i zaštitne navlake</span></div></label>
+              </div>
+            </div>
+            <div class="bg-secondary-container/30 p-space-sm rounded-lg flex items-start gap-3">
+              <input checked class="mt-1 w-4 h-4 text-secondary rounded focus:ring-secondary" id="sample-box-req" name="samples_requested" type="checkbox">
+              <label class="cursor-pointer" for="sample-box-req"><span class="block font-headline-sm text-body-md font-semibold text-on-surface">Želim da mi besplatno pošaljete uzorke tkanina na adresu (Swatch Box)</span></label>
+            </div>
+            <div>
+              <label class="block font-label-specs text-label-specs text-on-surface-variant uppercase mb-1">Napomena ili dodatne specifikacije (Opcionalno)</label>
+              <textarea class="w-full p-3 rounded bg-surface-container-low border border-outline-variant/30 text-on-surface placeholder:text-outline font-body-sm focus:bg-surface-container-lowest focus:outline-none focus:border-primary transition-all" placeholder="Navedite dimenzije kreveta, želje za vezenim logotipom, očekivani datum otvaranja sezone..." rows="3"></textarea>
+            </div>
+            <div class="pt-space-xs flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+              <div class="flex items-center gap-2 text-on-surface-variant font-label-specs text-label-specs hidden sm:flex"><span class="material-symbols-outlined text-secondary text-lg">lock</span><span class="">Podaci se koriste isključivo za pripremu ponude</span></div>
+              <button class="w-full sm:w-auto px-space-lg py-3 rounded bg-primary-container hover:bg-tertiary-container text-on-primary font-headline-sm text-body-md font-semibold transition-all shadow-md flex items-center justify-center gap-2 whitespace-nowrap" type="submit"><span class="material-symbols-outlined text-base">send</span><span class="">Pošaljite Upit</span></button>
+            </div>
+            <div class="hidden p-space-sm bg-surface-container-high rounded text-on-surface transition-all" id="form-success-banner">
+              <div class="flex items-center gap-2 text-secondary font-headline-sm text-body-md font-semibold"><span class="material-symbols-outlined">check_circle</span><span class="">Zahvaljujemo! Vaš upit je zaprimljen.</span></div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Naš komercijalist priprema specifikaciju te će vas kontaktirati unutar 24 radna sata.</p>
+            </div>
+          </form>
+        </div>
+
+        <!-- INFO SIDEBAR COLUMN -->
+        <div class="lg:col-span-5 flex flex-col gap-space-md mt-8 lg:mt-0">
+          <div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm border border-surface-variant">
+            <div class="flex items-center justify-between mb-space-sm"><span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Sjedište i Izložbeni Salon</span><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-specs text-label-specs">Posjet uz najavu</span></div>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-xs">Rijeka Ured & Textile Showroom</h3>
+            <div class="space-y-3 font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              <div class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-lg mt-0.5">location_on</span><div><strong class="text-on-surface block font-medium">RemTex Pro d.o.o.</strong><span class="">Industrijska zona Kukuljanovo bb / Rijeka, Hrvatska</span></div></div>
+              <div class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-lg mt-0.5">schedule</span><div><span class="text-on-surface font-medium">Radno vrijeme prodajnog tima:</span><div class="font-label-specs text-label-specs text-on-surface-variant mt-0.5">Ponedjeljak – Petak: 08:00 – 16:00 h</div></div></div>
+              <div class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-lg mt-0.5">call</span><div class="flex flex-col"><a class="hover:text-on-surface transition-colors font-label-specs text-label-specs font-semibold text-on-surface" href="tel:+38551445220">Tel: +385 (0)51 445 220 (Ured veleprodaje)</a><a class="hover:text-on-surface transition-colors font-label-specs text-label-specs text-secondary font-semibold mt-1" href="tel:+385915553820">Mob: +385 (0)91 555 3820 (Voditelj ključnih kupaca)</a></div></div>
+              <div class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-lg mt-0.5">mail</span><div class="flex flex-col font-label-specs text-label-specs"><a class="text-on-surface font-medium hover:underline" href="mailto:prodaja@remtexpro.hr">prodaja@remtexpro.hr</a><a class="text-on-surface-variant hover:underline" href="mailto:info@remtexpro.hr">info@remtexpro.hr</a></div></div>
+            </div>
+            <div class="relative w-full h-44 rounded-lg overflow-hidden shadow-inner mb-space-sm">
+              <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA9BCBVkWVBsIuojw_BvHKYIGZoXpkVzSGP9h4nvoZKNdqsU2jApvMK5jRpCmAGThL-Pah5_l-nEy8h41O78tsBilcWtzaDGKU9H6IwkIpr_f56W9SvKVzkBjG6lDAYEB2h15gxeAuFnn3obvDv54ZUlypDBTqrFIpq9n9c5iz8CBNEN5DOPErcdAk4vuTh7uuQ2EeO83BNaH9NMnHSNCGFGQgEsvmMHbUiNlTHaCar6usyaHh3VTMRnQ')"></div>
+              <div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-sm px-2.5 py-1 rounded text-on-surface font-label-specs text-label-specs flex items-center gap-1.5 shadow-sm"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="">Proizvodnja i skladište gotovih zaliha</span></div>
+            </div>
+          </div>
+          
+          <div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm border border-surface-variant">
+            <div class="flex items-center justify-between mb-space-sm"><span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Pitanja i Odgovori</span><span class="font-label-specs text-label-specs text-on-surface-variant">Česta Pitanja</span></div>
+            <div class="space-y-2">
+              <div class="faq-item rounded bg-surface-container-low transition-colors">
+                <button class="w-full p-3 flex items-center justify-between text-left font-headline-sm text-body-sm font-semibold text-on-surface" onclick="toggleFaq(this)" type="button"><span class="">Koliki je prosječni rok isporuke?</span><span class="material-symbols-outlined text-secondary text-base transition-transform transform rotate-0 faq-icon">expand_more</span></button>
+                <div class="faq-content hidden px-3 pb-3 font-body-sm text-body-sm text-on-surface-variant">Za standardne zalihe posteljine i ručnika s lagera isporuka je unutar 2-4 radna dana. Za narudžbe po mjeri (nestandardne dimenzije ili vezeni logotip) rok iznosi 10 do 20 radnih dana ovisno o volumenu.</div>
+              </div>
+              <div class="faq-item rounded bg-surface-container-low transition-colors">
+                <button class="w-full p-3 flex items-center justify-between text-left font-headline-sm text-body-sm font-semibold text-on-surface" onclick="toggleFaq(this)" type="button"><span class="">Koje su minimalne količine narudžbe (MOQ)?</span><span class="material-symbols-outlined text-secondary text-base transition-transform transform rotate-0 faq-icon">expand_more</span></button>
+                <div class="faq-content hidden px-3 pb-3 font-body-sm text-body-sm text-on-surface-variant">Za proizvode sa skladišta nema strogog minimalnog iznosa – isporučujemo već od 5 garnitura. Za krojene artikle po mjeri i strojni vez logotipa minimalna količina je obično 20-30 jedinica po artiklu.</div>
+              </div>
+              <div class="faq-item rounded bg-surface-container-low transition-colors">
+                <button class="w-full p-3 flex items-center justify-between text-left font-headline-sm text-body-sm font-semibold text-on-surface" onclick="toggleFaq(this)" type="button"><span class="">Može li se naručiti strojni vez hotelskog logotipa?</span><span class="material-symbols-outlined text-secondary text-base transition-transform transform rotate-0 faq-icon">expand_more</span></button>
+                <div class="faq-content hidden px-3 pb-3 font-body-sm text-body-sm text-on-surface-variant">Da, raspolažemo industrijskim vezilicama visoke preciznosti. Radimo direktan vez na frotir ručnike, ogrtače, satenske navlake i hotelske ubruse prema vašoj vektorskoj grafici koncima otpornima na klor i visoke temperature pranja.</div>
+              </div>
+              <div class="faq-item rounded bg-surface-container-low transition-colors">
+                <button class="w-full p-3 flex items-center justify-between text-left font-headline-sm text-body-sm font-semibold text-on-surface" onclick="toggleFaq(this)" type="button"><span class="">Kako održavati satensku posteljinu i frotir?</span><span class="material-symbols-outlined text-secondary text-base transition-transform transform rotate-0 faq-icon">expand_more</span></button>
+                <div class="faq-content hidden px-3 pb-3 font-body-sm text-body-sm text-on-surface-variant">Svi naši materijali namijenjeni su profesionalnim industrijskim praonicama. Tkanina podnosi cikluse pranja do 95°C te kalandriranje (valjanje). Uz svaku isporuku prilažemo tehnički ispitni protokol s uputama za održavanje bez skupljanja.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<!-- FLOATING QUOTE TRAY (Only visible when user adds items via JS) -->
+<div class="fixed bottom-4 left-0 right-0 z-[100] max-w-[1200px] w-[95%] mx-auto transition-all duration-300 shadow-2xl pointer-events-none hidden" id="quote-tray">
+  <div class="p-space-sm md:px-space-md py-3 rounded-xl bg-primary-container text-on-primary shadow-xl flex flex-col sm:flex-row items-center justify-between gap-space-sm pointer-events-auto">
+    <div class="flex items-center gap-space-sm w-full sm:w-auto">
+      <div class="w-10 h-10 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center text-secondary-fixed shrink-0">
+        <span class="material-symbols-outlined text-[24px]">assignment_turned_in</span>
+      </div>
+      <div class="flex flex-col min-w-0">
+        <div class="flex items-center gap-2">
+          <span class="font-headline-sm text-headline-sm font-semibold text-on-primary">Vaš Upit za Ponudu</span>
+          <span class="px-2 py-0.5 rounded-full bg-secondary text-surface font-label-specs text-label-specs font-bold" id="quote-count-badge">0 artikala</span>
+        </div>
+        <span class="font-label-specs text-label-specs text-on-primary-container truncate" id="quote-summary-text">Upitnik je trenutno prazan. Dodajte artikle iz kataloga.</span>
+      </div>
+    </div>
+    <div class="flex items-center gap-space-xs w-full sm:w-auto justify-end shrink-0">
+      <button class="hidden md:inline-flex px-3 py-2 text-on-primary-container hover:text-on-primary font-label-specs text-label-specs transition-colors" onclick="clearQuote()" type="button">Isprazni</button>
+      <button class="inline-flex items-center justify-center gap-2 px-space-md py-2.5 rounded-lg bg-surface hover:bg-secondary-fixed text-primary font-headline-sm text-body-sm font-semibold transition-all shadow-md whitespace-nowrap" onclick="document.getElementById('nav-kontakt').click()">
+        <span class="">Pošalji upit</span>
+        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- GLOBAL FOOTER -->
+<footer class="w-full bg-surface-container-lowest text-on-surface border-t border-surface-variant relative z-10 pb-24 md:pb-0">
+  <div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop py-space-xl">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-desktop mb-space-xl">
+      <div class="lg:col-span-4 flex flex-col gap-space-sm">
+        <div class="flex items-center gap-space-xs">
+          <div class="w-9 h-9 rounded-lg overflow-hidden flex-shrink-0 shadow-sm"><img src="https://lh3.googleusercontent.com/aida/AEtjO1Wqb2HCik7kxYeBhkBIIH3pNRSwlculZ_y4OHoLHVdqRhW7GvTU6upIptBBqBl0U1uAV4HafAR30bLyR4SJMXD8uP82xlm3fFLw3-xZeDb2gk1ohjPyiv4z7dfj76HsUo-LLWxdEhNgehsIbDb3PSIISoBn_4xYP2R9DQKpf8YWlHyNqOxDfmplwGFvHlTBVrd3hQjTVhMOFx8PqDi6hsC_6qceKYli5HqJK8Nu3IAzqdEW5esC3EnVUyhX" alt="RemTex Pro Logo" class="w-full h-full object-cover"></div>
+          <span class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase tracking-tight">RemTex Pro</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mt-space-xs">Specijalizirani partner za cjelovito tekstilno opremanje boutique hotela, luxury resorta, vila i turističkih apartmana na Jadranu i srednjoj Europi.</p>
+        <div class="inline-flex items-center gap-2 mt-space-sm p-space-xs px-space-sm bg-surface-container-low rounded-lg border border-outline-variant/50 max-w-fit"><span class="font-label-specs text-label-specs uppercase text-secondary font-semibold">Certifikat:</span><span class="font-label-specs text-label-specs text-on-surface">OEKO-TEX® Standard 100 Class I</span></div>
+      </div>
+      <div class="lg:col-span-3 flex flex-col gap-space-xs">
+        <h4 class="font-label-caps text-label-caps uppercase text-secondary tracking-widest mb-space-xs">Proizvodni Program</h4>
+        <ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant">
+          <li><a class="hover:text-on-surface transition-colors cursor-pointer" onclick="document.getElementById('nav-katalog').click()">Hotelska Posteljina (400+ TC Egyptian Cotton)</a></li>
+          <li><a class="hover:text-on-surface transition-colors cursor-pointer" onclick="document.getElementById('nav-katalog').click()">Jastuci, Nadmadraci i Popluni</a></li>
+          <li><a class="hover:text-on-surface transition-colors cursor-pointer" onclick="document.getElementById('nav-katalog').click()">Hotelski Ručnici i Kupaonski Ogrtači</a></li>
+          <li><a class="hover:text-on-surface transition-colors cursor-pointer" onclick="document.getElementById('nav-katalog').click()">Madraci i Boxspring Hotelski Kreveti</a></li>
+          <li><a class="hover:text-on-surface transition-colors cursor-pointer" onclick="document.getElementById('nav-katalog').click()">Stolni Program & Banketni Tekstil</a></li>
+          <li><a class="hover:text-on-surface transition-colors cursor-pointer" onclick="document.getElementById('nav-katalog').click()">Zavjese, Blackout i Negorivi Dekori (FR)</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-2 flex flex-col gap-space-xs">
+        <h4 class="font-label-caps text-label-caps uppercase text-secondary tracking-widest mb-space-xs">Navigacija & Usluge</h4>
+        <ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant">
+          <li><a class="hover:text-on-surface transition-colors cursor-pointer" onclick="document.getElementById('nav-pocetna').click()">Početna</a></li>
+          <li><a class="hover:text-on-surface transition-colors cursor-pointer" onclick="document.getElementById('nav-katalog').click()">Projektno Opremanje</a></li>
+          <li><a class="hover:text-on-surface transition-colors cursor-pointer" onclick="document.getElementById('nav-kontakt').click()">O Nama & Atelier</a></li>
+          <li><a class="hover:text-on-surface transition-colors cursor-pointer" onclick="document.getElementById('nav-kontakt').click()">Pošaljite B2B RFQ</a></li>
+          <li><a class="hover:text-on-surface transition-colors cursor-pointer" onclick="document.getElementById('nav-katalog').click()">Uzorci i Swatch Box</a></li>
+          <li><a class="hover:text-on-surface transition-colors cursor-pointer" onclick="document.getElementById('nav-kontakt').click()">Tehničke Specifikacije</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-3 flex flex-col gap-space-xs">
+        <h4 class="font-label-caps text-label-caps uppercase text-secondary tracking-widest mb-space-xs">Sezonski Bilten i Ponude</h4>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">Prijavite se za analize kretanja cijena, specifikacije i rane prednarudžbe s ugovorenim rabatom.</p>
+        <div class="flex flex-col gap-2 mt-space-xs">
+          <input class="w-full px-space-sm py-2.5 rounded-lg bg-surface border border-outline-variant text-on-surface placeholder:text-outline font-body-sm focus:outline-none focus:border-primary" placeholder="poslovna-adresa@hotel.hr" type="email">
+          <button class="w-full px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-headline-sm text-body-sm hover:bg-surface-variant hover:text-on-surface transition-colors font-semibold whitespace-nowrap" type="button">Prijava na Obavijesti</button>
+        </div>
+      </div>
+    </div>
+    <div class="pt-space-md border-t border-surface-variant flex flex-col sm:flex-row items-center justify-between gap-space-xs font-label-specs text-label-specs text-on-surface-variant">
+      <div class="">© 2025 RemTex Pro d.o.o. Sva prava pridržana. Veleprodaja hotelskog tekstila.</div>
+      <div class="flex items-center gap-space-md">
+        <a class="hover:text-on-surface" href="#">Uvjeti poslovanja</a>
+        <a class="hover:text-on-surface" href="#">Zaštita podataka (GDPR)</a>
+        <a class="hover:text-on-surface" href="#">Certifikati & Ispitni protokoli</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- MASTER JAVASCRIPT LOGIC -->
+<script>
+  // 1. SIMPLE ROUTER
+  function switchView(viewId, navId) {
+    // Hide all views
+    document.querySelectorAll('.page-view').forEach(el => {
+      el.classList.add('hidden');
+      el.classList.remove('block');
+    });
+    // Show targeted view
+    const targetView = document.getElementById(viewId);
+    if(targetView) {
+      targetView.classList.remove('hidden');
+      targetView.classList.add('block');
+    }
+    
+    // Update navigation active states
+    document.querySelectorAll('.nav-link').forEach(el => {
+      el.classList.remove('nav-active');
+    });
+    if(navId) {
+      const activeNav = document.getElementById(navId);
+      if(activeNav) activeNav.classList.add('nav-active');
+    }
+
+    // Scroll top and close mobile menu
+    window.scrollTo(0,0);
+    document.getElementById('mobile-nav-drawer').classList.add('hidden');
+    
+    // Check if Quote Tray needs to be visible
+    updateTrayVisibility();
+
+    // Re-trigger fade-ins
+    setTimeout(triggerFadeIns, 50);
+  }
+
+  // 2. FADE-IN ANIMATION OBSERVER
+  function triggerFadeIns() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    document.querySelectorAll('.fade-in-section').forEach(section => {
+      section.classList.remove('is-visible');
+      observer.observe(section);
+    });
+  }
+
+  // 3. CALCULATOR LOGIC
+  let currentPackage = 'apartments';
+  const packageData = {
+    apartments: {
+      title: 'Kalkulator: Paket za Apartmane (3-5★)',
+      badge: 'Paket: Start Apartmani',
+      multipliers: { bedding: 3, sheets: 3, pillowcases: 6, towelsLarge: 6, towelsHand: 6, mats: 1.5, protectors: 1 }
+    },
+    boutique: {
+      title: 'Kalkulator: Boutique Hotel Paket (4-5★)',
+      badge: 'Paket: Boutique Hotel',
+      multipliers: { bedding: 3.5, sheets: 3.5, pillowcases: 8, towelsLarge: 8, towelsHand: 8, mats: 2, protectors: 1.2 }
+    },
+    resort: {
+      title: 'Kalkulator: Resort & Spa Kolekcija (5★)',
+      badge: 'Paket: Resort & Spa',
+      multipliers: { bedding: 4, sheets: 4, pillowcases: 10, towelsLarge: 10, towelsHand: 10, mats: 3, protectors: 1.5 }
+    }
+  };
+
+  function selectPackage(pkg) {
+    currentPackage = pkg;
+    
+    document.querySelectorAll('[id^="btn-"]').forEach(btn => {
+      if(btn) {
+        if (btn.id === 'btn-' + pkg) {
+          btn.classList.add('border-secondary');
+          btn.classList.remove('border-transparent');
+        } else {
+          btn.classList.remove('border-secondary');
+          btn.classList.add('border-transparent');
+        }
+      }
+    });
+
+    const pTitle = document.querySelectorAll('#package-title');
+    const pBadge = document.querySelectorAll('#package-badge');
+    pTitle.forEach(el => el.innerText = packageData[pkg].title);
+    pBadge.forEach(el => el.innerText = packageData[pkg].badge);
+    
+    updateCalculator();
+  }
+
+  function updateCalculator() {
+    const inputRooms = document.querySelectorAll('#input-rooms');
+    const inputBeds = document.querySelectorAll('#input-beds');
+    
+    if(inputRooms.length === 0 || inputBeds.length === 0) return;
+    
+    const rooms = parseInt(inputRooms[0].value, 10);
+    const bedsPerRoom = parseInt(inputBeds[0].value, 10);
+
+    document.querySelectorAll('#rooms-display').forEach(el => {
+        el.innerText = rooms + (rooms === 1 ? ' Soba / Apt' : (rooms < 5 ? ' Sobe / Apt' : ' Soba / Apt'));
+    });
+
+    const totalBeds = rooms * (bedsPerRoom / 2);
+    const multipliers = packageData[currentPackage].multipliers;
+
+    document.querySelectorAll('#calc-bedding').forEach(el => el.innerText = Math.round(totalBeds * multipliers.bedding) + ' kom');
+    document.querySelectorAll('#calc-sheets').forEach(el => el.innerText = Math.round(totalBeds * multipliers.sheets) + ' kom');
+    document.querySelectorAll('#calc-pillowcases').forEach(el => el.innerText = Math.round(totalBeds * multipliers.pillowcases) + ' kom');
+    document.querySelectorAll('#calc-towels-large').forEach(el => el.innerText = Math.round(totalBeds * multipliers.towelsLarge) + ' kom');
+    document.querySelectorAll('#calc-towels-hand').forEach(el => el.innerText = Math.round(totalBeds * multipliers.towelsHand) + ' kom');
+    document.querySelectorAll('#calc-mats').forEach(el => el.innerText = Math.round(rooms * multipliers.mats) + ' kom');
+    document.querySelectorAll('#calc-protectors').forEach(el => el.innerText = Math.round(totalBeds * multipliers.protectors) + ' kom');
+  }
+
+
+  // 4. FAQ LOGIC
+  function toggleFaq(btn) {
+    const content = btn.parentElement.querySelector('.faq-content');
+    const icon = btn.querySelector('.faq-icon');
+    const isOpen = !content.classList.contains('hidden');
+    
+    const parentContainer = btn.closest('.space-y-2');
+    if(parentContainer) {
+      parentContainer.querySelectorAll('.faq-content').forEach(el => el.classList.add('hidden'));
+      parentContainer.querySelectorAll('.faq-icon').forEach(el => el.classList.remove('rotate-180'));
+    }
+    
+    if (!isOpen) {
+      content.classList.remove('hidden');
+      icon.classList.add('rotate-180');
+    }
+  }
+
+
+  // 5. FORM SUBMISSION
+  function handleInquirySubmit(e) {
+    e.preventDefault();
+    const forms = document.querySelectorAll('#b2b-rfq-form');
+    const successMsgs = document.querySelectorAll('#form-success-banner');
+    
+    forms.forEach(form => form.classList.add('hidden'));
+    successMsgs.forEach(msg => {
+      msg.classList.remove('hidden');
+      if(msg.closest('.page-view.block')) {
+         msg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+  }
+
+
+  // 6. QUOTE TRAY (CART) LOGIC
+  let quoteItems = [];
+  
+  function updateTrayVisibility() {
+      const tray = document.getElementById('quote-tray');
+      if(!tray) return;
+      
+      const isKatalogActive = document.getElementById('katalog').classList.contains('block');
+      
+      if(quoteItems.length > 0) {
+          tray.classList.remove('hidden');
+      } else if (isKatalogActive) {
+          tray.classList.remove('hidden');
+      } else {
+          tray.classList.add('hidden');
+      }
+  }
+
+  function updateTray() {
+    const badge = document.getElementById('quote-count-badge');
+    const summary = document.getElementById('quote-summary-text');
+    if (badge && summary) {
+      badge.textContent = quoteItems.length + ' artikala';
+      if (quoteItems.length === 0) {
+        summary.textContent = 'Upitnik je prazan. Dodajte artikle iz kataloga.';
+      } else {
+        summary.textContent = quoteItems.map(i => i.name.split(' ')[0] + ' (' + i.code + ')').join(', ');
+      }
+    }
+    updateTrayVisibility();
+  }
+
+  window.addToQuote = function(code, name) {
+    if (!quoteItems.some(i => i.code === code)) {
+      quoteItems.push({ code, name });
+      updateTray();
+      showNotification('Artikl ' + code + ' dodan u upit.');
+    } else {
+      showNotification('Artikl ' + code + ' je već u upitniku.');
+    }
+  };
+
+  window.clearQuote = function() {
+    quoteItems = [];
+    updateTray();
+    showNotification('Popis artikala je ispražnjen.');
+  };
+
+  window.quickApplyTier = function(tierName) {
+    showNotification('Odabran ' + tierName + '. Konfigurirajte upit.');
+    setTimeout(() => { document.getElementById('nav-kontakt').click(); }, 800);
+  };
+
+  function showNotification(msg) {
+    const toast = document.createElement('div');
+    toast.className = 'fixed top-24 left-1/2 transform -translate-x-1/2 z-[100] px-space-md py-3 rounded-lg bg-on-surface text-surface font-body-sm text-body-sm shadow-xl flex items-center gap-2 transition-all duration-300';
+    toast.innerHTML = '<span class="material-symbols-outlined text-[18px] text-secondary">info</span><span>' + msg + '</span>';
+    document.body.appendChild(toast);
+    setTimeout(() => {
+      toast.style.opacity = '0';
+      setTimeout(() => toast.remove(), 300);
+    }, 2600);
+  }
+
+  // Initialize
+  window.addEventListener('DOMContentLoaded', () => {
+    updateCalculator();
+    updateTray();
+    triggerFadeIns();
+  });
+</script>
+
+</body>
+</html>
